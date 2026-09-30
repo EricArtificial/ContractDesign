@@ -17,6 +17,11 @@
 - [x] 重新加载 `cross-chat-relay` skill，调整启动与交接规则，并把 README 中过时的“环境配置”阶段改为当前研究状态。
 - [x] 2026-09-29：核对作业原件并检索官方碳市场制度、广期所结算规则、ICE 合约及期货设计研究，形成涵盖标的、数据、交割/价格、十项条款、风险、压力测试和提交的完整设计流程及来源地图。
 - [x] 2026-09-30：阅读刘成伟《碳权投资的产品要素与交易机制》，对照现有流程及 2024—2026 年官方制度，形成面向合约设计的审查笔记 `research/contract-design/GLO_CARBON_RIGHTS_DESIGN_REVIEW.md`。笔记区分文章当时描述、当前核实制度和设计建议，列出标的、交割品年度/状态、CCER 抵销、价格、流动性、参与者和监管等待确认门槛；未据此预设合约参数。
+- [x] 2026-09-30：依据作业原件和设计流程建立 `submission/carbon_futures_contract_template.tex`。模板包含四个核心模块、十项三列表格、APA 参考文献占位和可选的真实会议/分工附件结构；拟议参数及成员信息保留待填写。
+- [x] 2026-09-30：新增根目录 `Makefile`，在项目根目录运行 `make` 即以 XeLaTeX 编译模板并输出 `submission/carbon_futures_contract_template.pdf`；中间文件保存在已忽略的 `submission/.build/`。README 已写明命令。
+- [x] 2026-09-30：按用户提供的页首参考图调整 TeX 模板页眉：采用参考图青绿色 `#458377`、右对齐粗黑体标题和可缩放的矢量柱状折线图标；正文原大标题改为小组信息行，避免重复。
+- [x] 2026-09-30：依用户进一步要求将页眉缩为右上角小尺寸，文案明确为“碳期货合约及规则设计说明”；正文恢复“广州期货交易所碳期货合约设计”独立主标题，并删除小组名称、成员姓名、提交日期显示区。
+- [x] 2026-09-30：按用户要求将小页眉改为仅从第二页显示；第一页使用无页眉但保留页码的样式。
 
 ## Current Task
 - [ ] 收集 CEA 与 CCER 同口径的逐日价格、成交量及合格资产范围资料，按 `docs/CONTRACT_DESIGN_WORKFLOW.md` 第 1–2 步形成标的比较底稿。
@@ -25,6 +30,7 @@
 - [ ] 核对钯期货正式一页合约的可获取性及五个现有品种的合约版本；记录查得结果与仍未能核实的部分。
 - [ ] 在来源地图的待补证据清单基础上，完成 CEA/CCER 标的比较与参数依据记录。
 - [ ] 设计碳期货合约并撰写、核查报告。
+- [ ] 在提交版 TeX 模板中填入经核实的方案、来源与真实小组信息，并核对正文长度及报告页数。
 - [ ] 根据真实小组活动整理附件，导出并核查提交 PDF。
 
 ## Architectural Decisions
@@ -41,6 +47,11 @@
 - `docs/CONTRACT_DESIGN_WORKFLOW.md` — 新增逐步设计、十项条款定值方法、风险与压力测试、三次会议和提交验收流程。
 - `research/contract-design/SOURCE_MAP.md` — 新增一手资料用途、局限及下一步证据缺口。
 - `research/contract-design/GLO_CARBON_RIGHTS_DESIGN_REVIEW.md` — 新增针对 2021 年法律评论的期货设计审查与现行制度交叉核对。
+- `submission/carbon_futures_contract_template.tex` — 新增可编译的中文提交稿模板；附件开关默认关闭，避免空白纪要进入报告。
+- `Makefile` — 新增默认 PDF 编译目标及 `make clean` 中间文件清理目标。
+- `.gitignore` — 忽略 `submission/.build/` 中间编译文件。
+- `README.md` — 补充 `make` 编译说明。
+- `submission/carbon_futures_contract_template.pdf` — 初步编译预览，仍含待填写内容，不能作为最终提交稿。
 
 ## Tests
 - `file 'sources/Group Assignment0914.docx' research/gfex-futures/*.pdf` — PASS；原件识别为 DOCX，研究资料识别为 PDF，四份正式合约转载及钯合约表摘页均为一页。
@@ -48,6 +59,11 @@
 - `git diff --check` — PASS；三个修改文件均无空白错误。
 - 2026-09-29：作业原件中的长度、三次讨论、每人写作与提交要求已再次从 DOCX 提取核对；所用外部来源有可访问的官方或原始研究页面。`git diff --check` 通过；新增流程含十项必填字段；两个新增文件的本地相对链接均存在。
 - 2026-09-30：文章原文、2024 年国务院条例、2023 年 CCER 办法、2024 年配额结转方案、2026 年工作通知及 2026 年最新配额方案已在线打开核对；审查笔记已落盘，`git diff --check` 通过。
+- 2026-09-30：`latexmk -xelatex -interaction=nonstopmode -halt-on-error -outdir=/private/tmp/carbon-tex-build submission/carbon_futures_contract_template.tex` 通过；模板 PDF 为 A4、2 页，日志无 Overfull/Underfull、Warning 或 Error；十项条款和四模块在 PDF 文本中可读。
+- 2026-09-30：项目根目录 `make` 通过，生成 193,948 字节、A4 两页的 `submission/carbon_futures_contract_template.pdf`；再次运行 `make -n` 显示无需重编译，日志无未定义引用、警告或版面溢出，`git diff --check` 通过。
+- 2026-09-30：页眉更新后运行 `make` 通过；PDF 仍为 A4 两页，已查看第一页顶部预览，页眉与正文无重叠；最终编译日志无未定义引用、警告或版面溢出，`git diff --check` 通过。
+- 2026-09-30：小页眉版本运行 `make` 通过，PDF 为 A4 两页；已目视检查第一页顶部层级，PDF 文本含正确页眉及正文标题且不含小组/成员/日期占位；日志无警告、未定义引用或版面溢出，`git diff --check` 通过。
+- 2026-09-30：再次运行 `make` 通过，PDF 仍为 A4 两页；逐页文本核查显示第一页只有正文主标题、第二页开始出现“小页眉”文字；日志无警告或版面溢出，`git diff --check` 通过。
 
 ## Known Issues / Blockers
 - 钯正式一页合约尚未取得。此前记录广期所官网 HTTPS 证书不匹配、HTTP 返回访问校验脚本；这一访问状况本次未重新测试。

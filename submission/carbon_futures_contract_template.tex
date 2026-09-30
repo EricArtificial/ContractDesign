@@ -1,0 +1,151 @@
+% !TeX program = xelatex
+% 广期所碳期货合约设计作业：提交稿模板（非已完成报告）
+% 在项目根目录运行 make，生成 submission/carbon_futures_contract_template.pdf。
+% 填写前核对 docs/ASSIGNMENT_REQUIREMENTS.md 与 sources/Group Assignment0914.docx。
+% 正文上限：2,000 words；参考文献和合约表不计入。稳妥起见，报告本体控制在 5 页内。
+% 所有【待填写/待核实】都必须在提交前替换；不要凭模板虚构参数、数据、会议或贡献。
+
+\documentclass[UTF8,a4paper,11pt,oneside,fontset=fandol]{ctexart}
+\usepackage[left=2.25cm,right=2.25cm,top=2.6cm,bottom=2.25cm,headheight=31pt,headsep=16pt,footskip=0.8cm]{geometry}
+\usepackage{array,booktabs,tabularx,longtable}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+\usepackage{xcolor}
+\usepackage{tikz}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.2em}
+\setlist[itemize]{leftmargin=2em,nosep}
+\renewcommand{\arraystretch}{1.17}
+\definecolor{promptgray}{RGB}{100,100,100}
+\definecolor{bannerteal}{RGB}{69,131,119} % 参考图主色 #458377
+% 参考图的粗黑体视觉；使用 TeX Live 自带黑体保证 make 可移植编译。
+\newCJKfontfamily\bannerfont{FandolHei-Bold.otf}
+\newcommand{\fillin}[1]{\textcolor{promptgray}{\textbf{【#1】}}}
+\newcommand{\sourcehint}[1]{\textcolor{promptgray}{\small #1}}
+\newcommand{\APAEntry}[1]{\par\noindent\hangindent=2em\hangafter=1 #1\par}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+% 只记录已确认的信息。附件应由真实的三次讨论纪要与实际分工填写后再启用。
+\newif\ifIncludeAppendices
+\IncludeAppendicesfalse % 完成附件后改为 \IncludeAppendicestrue
+\newcommand{\ReportTitle}{广州期货交易所碳期货合约设计}
+\newcommand{\RunningTitle}{碳期货合约及规则设计说明}
+
+% 右对齐青绿标题及矢量线框图标，替代原有页眉。
+\newcommand{\MarketIcon}{%
+  \begin{tikzpicture}[x=0.5pt,y=0.5pt,baseline=-1pt,draw=bannerteal,line width=0.9pt,line cap=round,line join=round]
+    \draw (0,0) rectangle (5,11);
+    \draw (9,0) rectangle (14,17);
+    \draw (18,0) rectangle (23,15);
+    \draw (27,0) rectangle (32,24);
+    \draw (2,25) -- (11,29) -- (20,26) -- (29,34);
+    \foreach \x/\y in {2/25,11/29,20/26,29/34}{\fill[bannerteal] (\x,\y) circle (0.8pt);}
+  \end{tikzpicture}%
+}
+\newcommand{\BannerTitle}{%
+  {\color{bannerteal}\bannerfont\fontsize{9}{11}\selectfont\RunningTitle}%
+  \hspace{0.6em}\MarketIcon%
+}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\BannerTitle}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+\thispagestyle{plain} % 小页眉仅从第二页起显示；第一页保留页码。
+\begin{center}
+  {\LARGE\bfseries \ReportTitle\par}
+\end{center}
+\vspace{0.5em}
+
+\section{标的资产与交易品种}
+\noindent\textbf{拟选标的：}\fillin{CEA 或 CCER；写清法定/登记名称及选择结论}。
+说明另一候选品种未被选用的原因。论证所选资产的\textbf{同质性}（年度、批次、项目或适用范围）、\textbf{价格波动}（数据期间、交易方式、缺失与异常）、\textbf{市场潜力}（套保主体、可交易供给、流动性）。逐项附可核实来源，不能用不同口径的全年量与累计量直接比较。
+
+\noindent\textbf{交易单位选择：}\fillin{每手数量与单位}；\fillin{现货交易批量、典型风险敞口及合约价值计算}。欧盟一手 1,000 EUA 仅作对照，不能直接作为本方案取值。
+
+\section{标准化合约条款}
+% 每一行：设计内容给出可执行值/规则；设计依据给出逻辑、数据或制度来源。
+% 原件表头：Term | Design Content | Design Basis。提交前删除全部提示词。
+\small
+\begin{longtable}{@{}L{0.225\textwidth}L{0.265\textwidth}L{0.445\textwidth}@{}}
+\caption{拟议碳期货合约条款表}\label{tab:contract}\\
+\toprule
+\textbf{条款（Term）} & \textbf{设计内容（Design Content）} & \textbf{设计依据（Design Basis）}\\
+\midrule
+\endfirsthead
+\toprule
+\textbf{条款（Term）} & \textbf{设计内容（Design Content）} & \textbf{设计依据（Design Basis）}\\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+交易品种及代码 & \fillin{正式拟议名称、代码} & \fillin{标的定义、代码唯一性核对与出处}\\
+交易单位 & \fillin{数量/手} & \fillin{套保规模、现货批量、合约价值及来源}\\
+报价单位 & \fillin{人民币/吨等，明确 CO\textsubscript{2} 或 CO\textsubscript{2}e} & \fillin{与标的计量、现货价格和交割品一致的理由}\\
+最小变动价位 & \fillin{金额/报价单位} & \fillin{报价精度；每跳盈亏＝价位×交易单位}\\
+每日价格涨跌停板 & \fillin{相对前结算价的幅度及异常处理} & \fillin{逐日波动、履约期尾部风险及压力测试；勿照搬示例 ±6\%}\\
+最低交易保证金 & \fillin{比例及提高条件} & \fillin{合约价值×比例；覆盖风险和履约期调整依据}\\
+合约月份 & \fillin{月份及挂牌跨度} & \fillin{套保周期、分配/清缴日历与流动性依据}\\
+最后交易日 & \fillin{可执行的交易日定义} & \fillin{价格发布或资产划转所需时间及节假日处理}\\
+交割方式 & \fillin{实物交割或现金交割} & \fillin{账户/系统可行性或现货指数可行性；与第 3 节一致}\\
+交割品级/标准 & \fillin{合格资产或现金指数样本范围} & \fillin{年度/批次、登记状态、排除条件与价格源一致性}\\
+\end{longtable}
+\normalsize
+
+\section{交割机制与参考、结算价格}
+\noindent\textbf{方式及理由：}\fillin{比较实物与现金两条路径，写出所选方式及前置条件}。
+若为实物交割，写明卖方可交割资产和账户资格、冻结或划转、货款交收、失败处理以及登记系统接口的核实状态。若为现金交割，写明指数样本、交易方式、数据授权、观察窗口、加权公式和操纵防范。
+
+\noindent\textbf{每日结算价：}\fillin{期货成交数据来源、计算窗口和公式、发布时间、无成交/异常时规则}。
+
+\noindent\textbf{到期最终价格：}\fillin{交割结算价或现金最终结算价的数据来源、公式、观察窗口、发布时间、修正/备用规则}。
+说明该价格如何与标的现货收敛；不要将现货收盘价、期货每日结算价和到期价格混用。
+
+\section{风险管理}
+\noindent\textbf{保证金与逐日盯市：}\fillin{基础比例、临近到期/异常波动提高条件、计算依据}。
+
+\noindent\textbf{涨跌停板：}\fillin{基准价、幅度、连续触板时的措施}。
+
+\noindent\textbf{持仓限额：}\fillin{一般月份、临近到期月份的额度、主体合并及套保处理}。
+
+\noindent\textbf{大户报告：}\fillin{触发阈值、报告内容、时点和核查程序}。
+
+\noindent\textbf{履约周期：}\fillin{所选标的适用的清缴/注销时间、潜在价格和供应冲击；保证金及限仓调整触发条件}。
+简述登记/价格源停机、无成交、政策改变合格资产、持仓集中时的备用措施，并与表\ref{tab:contract}及交割条款一致。
+
+\section{结论}
+\fillin{用 2--3 句概括设计逻辑、最重要的实施前置条件和仍待核实证据}。
+
+\section*{参考文献}
+% 仅列文中真正使用且已核对原文的来源，按 APA 格式和作者/机构排序。
+% 示例结构：机构/作者. (年份). 文献标题. 出版机构/网站. URL
+\APAEntry{\fillin{按 APA 格式填写已核实来源 1；与正文引注一一对应}}
+\APAEntry{\fillin{按 APA 格式填写已核实来源 2；逐项核对版本及 URL}}
+
+% 附件不计入报告本体页数的假设须在课程要求中核对；建议另行导出附件 PDF。
+\ifIncludeAppendices
+\clearpage
+\appendix
+\section{小组讨论纪要}
+% 必须是三次真实的正式讨论；复制下方段落并据真实记录填写。
+\subsection*{第一次讨论}
+\noindent 时间/地点/参加人：\fillin{据真实记录填写}。\par
+\noindent 议题与依据：\fillin{据真实记录填写}。\par
+\noindent 主要意见、决策过程与待办：\fillin{据真实记录填写}。\par
+\subsection*{第二次讨论}
+\noindent 时间/地点/参加人：\fillin{据真实记录填写}。\par
+\noindent 议题与依据：\fillin{据真实记录填写}。\par
+\noindent 主要意见、决策过程与待办：\fillin{据真实记录填写}。\par
+\subsection*{第三次讨论}
+\noindent 时间/地点/参加人：\fillin{据真实记录填写}。\par
+\noindent 议题与依据：\fillin{据真实记录填写}。\par
+\noindent 主要意见、决策过程与待办：\fillin{据真实记录填写}。\par
+
+\section{成员分工说明}
+% 每人至少独立撰写一个核心模块；只填实际工作与可核实贡献。
+\noindent\fillin{逐名列出独立撰写的核心模块、研究/数据/整合工作及实际贡献}。
+\fi
+\end{document}

@@ -11,3 +11,5 @@
 | `submission/` | 最终报告及提交版 PDF |
 
 当前已有广期所现有期货合约的研究资料，见 [`research/gfex-futures/INDEX.md`](research/gfex-futures/INDEX.md)。碳期货拟议参数、报告、会议记录和成员贡献尚未完成；需要继续未指明的工作时，以进度文件为入口，并核对实际文件。
+
+在项目根目录运行 `make`，可用 XeLaTeX 编译 [`submission/carbon_futures_contract_template.tex`](submission/carbon_futures_contract_template.tex)，并生成 `submission/carbon_futures_contract_template.pdf`。`make clean` 仅清理中间编译文件。模板中的待填写内容需要在正式提交前补齐。
