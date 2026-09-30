@@ -1,0 +1,109 @@
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=0.82in]{geometry}
+\usepackage{newtxtext,newtxmath}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage{booktabs,longtable,array}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+\usepackage{titlesec}
+\usepackage{caption}
+
+\setstretch{1.12}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+\setlength{\columnsep}{0.27in}
+\setlength{\LTpre}{0.5\baselineskip}
+\setlength{\LTpost}{0.35\baselineskip}
+\renewcommand{\arraystretch}{1.12}
+\captionsetup[table]{font=small,labelfont=bf,labelsep=period,justification=centering}
+\definecolor{draftgray}{gray}{0.36}
+\newcommand{\draft}[1]{\textcolor{draftgray}{\textit{[To verify: #1]}}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\APAEntry}[1]{\par\noindent\hangindent=1.5em\hangafter=1 #1\par}
+
+% AER-style numbered sections. The introduction is intentionally unnumbered.
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+\titleformat{\section}{\normalfont\bfseries\centering}{\thesection.}{0.6em}{}
+\titleformat{\subsection}{\normalfont\itshape}{\thesubsection.}{0.6em}{}
+\titlespacing*{\section}{0pt}{0.85\baselineskip}{0.4\baselineskip}
+\titlespacing*{\subsection}{0pt}{0.9\baselineskip}{0.3\baselineskip}
+
+\begin{document}
+\begin{center}
+  {\Large\bfseries A Carbon Futures Contract for the Guangzhou Futures Exchange\par}
+  % Add the verified author byline here if the group elects to display it.
+  \vspace{0.45\baselineskip}
+  \begin{minipage}{0.91\textwidth}
+  \small\noindent\textbf{Abstract.} \draft{Summarize the asset, delivery and settlement design, risk controls, and main implementation condition in 100 words or fewer.}
+  \end{minipage}
+\end{center}
+\vspace{0.35\baselineskip}
+
+\begin{multicols}{2}
+\noindent\draft{State the hedging problem, proposed asset, and relevance to China's carbon market. Make clear that this is a proposed GFEX contract.}
+
+\section{Underlying Asset and Market Rationale}
+\noindent\textbf{Asset selection.} \draft{Choose China Emission Allowances (CEA) or China Certified Emission Reductions (CCER), define the registered asset, and explain the choice.} Evaluate fungibility across eligible vintages or projects, price variation, and market depth using comparable data and cited sources. Do not compare annual CEA volume with cumulative CCER volume as though the periods matched.
+
+\noindent\textbf{Contract size.} \draft{State tonnes per contract, the relevant CO\textsubscript{2} or CO\textsubscript{2}e unit, and a calculation linking typical hedge size, spot trade size, and contract value.} The European 1,000-EUA contract is a comparator, not a parameter for this proposal.
+\end{multicols}
+
+\section{Proposed Contract Specifications}
+\begingroup
+\small\setstretch{1.06}
+\begin{longtable}{@{}L{0.205\textwidth}L{0.255\textwidth}L{0.475\textwidth}@{}}
+\caption{Proposed Carbon Futures Contract Specifications}\label{tab:terms}\\
+\toprule
+\textbf{Term} & \textbf{Design content} & \textbf{Design basis}\\
+\midrule
+\endfirsthead
+\multicolumn{3}{@{}l}{\small\textit{Table \thetable---continued}}\\
+\toprule
+\textbf{Term} & \textbf{Design content} & \textbf{Design basis}\\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Trading product and code & \draft{Proposed name and unique code} & \draft{Registered asset definition and code check; cite source}\\
+Trading unit & \draft{Quantity per contract} & \draft{Spot trading size, hedge scale, and contract-value calculation}\\
+Quotation unit & \draft{CNY per tonne of CO\textsubscript{2} or CO\textsubscript{2}e} & \draft{Consistency with the underlying asset and spot quotation}\\
+Minimum price fluctuation & \draft{CNY per quotation unit} & \draft{Price precision and tick value = tick size $\times$ trading unit}\\
+Maximum daily price fluctuation limit & \draft{Percentage of prior settlement price; exceptional rules} & \draft{Daily price distribution, compliance-season tails, and stress test}\\
+Minimum trading margin & \draft{Base rate and escalation rule} & \draft{Contract value $\times$ rate; stress coverage and seasonal adjustment}\\
+Contract months & \draft{Listed months and listing horizon} & \draft{Allocation, surrender, hedging, and liquidity calendar}\\
+Last trading day & \draft{Operational trading-day rule} & \draft{Time for price publication or asset transfer; holiday treatment}\\
+Delivery method & \draft{Physical or cash settlement} & \draft{Registry-transfer feasibility or spot-index feasibility; match Section III}\\
+Delivery grade/standard & \draft{Eligible asset or index sample} & \draft{Vintage or project eligibility, registration status, exclusions, and source consistency}\\
+\end{longtable}
+\noindent\footnotesize\textit{Notes:} All entries are proposed terms. Replace each bracketed field with a rule and a traceable basis before submission. The illustrative $\pm6\%$ limit in the assignment is not a required parameter.\par
+\endgroup
+
+\begin{multicols}{2}
+\section{Delivery and Reference Prices}
+\noindent\textbf{Delivery choice.} \draft{Compare physical delivery with cash settlement and state the selected approach and its implementation prerequisites.} For physical delivery, specify account eligibility, available and unrestricted assets, prefunding or freezing, registry transfer, payment, and failed delivery. For cash settlement, specify the licensed price source, eligible transactions, observation window, weighting formula, outlier policy, and fallback rule.
+
+\noindent\textbf{Daily settlement price.} \draft{Define the futures data source, calculation window and formula, publication time, and no-trade or disruption rule.}
+
+\noindent\textbf{Final settlement price.} \draft{Define the spot-based final price or delivery settlement price, its observation window, publication and correction process, and a fallback.} Explain how the specification promotes convergence between the expiring futures contract and the eligible spot asset. Keep the spot price, daily futures settlement price, and final settlement price distinct.
+
+\section{Risk Management and Implementation Conditions}
+\noindent\textbf{Margin and mark-to-market.} \draft{State the base margin rate, daily variation settlement, escalation triggers near expiry or in stressed markets, and the quantitative basis.}
+
+\noindent\textbf{Price limits.} \draft{State the reference price, limit width, and actions after consecutive limit moves.}
+
+\noindent\textbf{Position limits and large-position reporting.} \draft{Specify ordinary- and delivery-month limits, beneficial-owner aggregation, hedge exemptions, reporting threshold, required information, and reporting time.}
+
+\noindent\textbf{Compliance-cycle risk.} \draft{Identify the applicable allocation and surrender dates, likely demand and deliverable-supply shocks, and rule-based triggers for tighter margin or position limits.} Explain contingency arrangements for registry outages, absent spot trades, changes in eligible assets, and concentrated positions. State the regulatory and technical approvals required before listing.
+
+\section*{References}
+% The course requires APA references, although the AER style guide generally
+% uses Chicago author-date. List only works actually cited in the final text.
+\APAEntry{\draft{Insert verified APA references corresponding to every in-text citation.}}
+\end{multicols}
+
+% Prepare the three genuine meeting minutes and individual-contribution
+% statement as separate attachments after those events and contributions exist.
+\end{document}

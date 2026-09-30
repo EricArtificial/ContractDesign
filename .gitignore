@@ -2,3 +2,6 @@
 ~$*.docx
 *.tmp
 submission/.build/
+intermediate/.build/
+intermediate/preparatory/*.pdf
+intermediate/task_reports/*.pdf

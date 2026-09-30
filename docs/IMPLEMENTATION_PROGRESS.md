@@ -22,6 +22,8 @@
 - [x] 2026-09-30：按用户提供的页首参考图调整 TeX 模板页眉：采用参考图青绿色 `#458377`、右对齐粗黑体标题和可缩放的矢量柱状折线图标；正文原大标题改为小组信息行，避免重复。
 - [x] 2026-09-30：依用户进一步要求将页眉缩为右上角小尺寸，文案明确为“碳期货合约及规则设计说明”；正文恢复“广州期货交易所碳期货合约设计”独立主标题，并删除小组名称、成员姓名、提交日期显示区。
 - [x] 2026-09-30：按用户要求将小页眉改为仅从第二页显示；第一页使用无页眉但保留页码的样式。
+- [x] 2026-09-30：依据 AER 官方排版指引，将现有中文待填写模板另制为英文 AER 风格报告草稿 `submission/carbon_futures_contract_report.tex` 及 PDF。采用无封面首页、英文标题与 100 词以内摘要占位、无标题引言、罗马数字章节、booktabs 三栏合约表、11 点字体、1.5 倍行距与 1 英寸页边距。作业要求的 APA 参考文献优先于 AER 通常使用的 Chicago 作者—年份格式；原中文模板和用户的未提交改动保留。报告仍是待填写草稿，不含已核实合约参数或正式参考文献。
+- [x] 2026-09-30：依用户新要求将英文报告改为更紧凑的双栏正文；合约规格表保持跨双栏通栏。为适应版面，英文稿现用 10 点字体、1.12 倍行距和 0.82 英寸页边距；这覆盖上一条记录中的字号、行距及页边距，仍为课程报告的 AER 风格草稿而非 AER 期刊投稿规格。
 
 ## Current Task
 - [ ] 收集 CEA 与 CCER 同口径的逐日价格、成交量及合格资产范围资料，按 `docs/CONTRACT_DESIGN_WORKFLOW.md` 第 1–2 步形成标的比较底稿。
@@ -47,11 +49,13 @@
 - `docs/CONTRACT_DESIGN_WORKFLOW.md` — 新增逐步设计、十项条款定值方法、风险与压力测试、三次会议和提交验收流程。
 - `research/contract-design/SOURCE_MAP.md` — 新增一手资料用途、局限及下一步证据缺口。
 - `research/contract-design/GLO_CARBON_RIGHTS_DESIGN_REVIEW.md` — 新增针对 2021 年法律评论的期货设计审查与现行制度交叉核对。
-- `submission/carbon_futures_contract_template.tex` — 新增可编译的中文提交稿模板；附件开关默认关闭，避免空白纪要进入报告。
-- `Makefile` — 新增默认 PDF 编译目标及 `make clean` 中间文件清理目标。
+- `submission/carbon_futures_contract_template.tex` — 保留可编译的中文模板；附件开关默认关闭，避免空白纪要进入报告。
+- `submission/carbon_futures_contract_report.tex` — 新增英文 AER 风格报告草稿，十项条款与四个核心模块完整保留，未核实内容明确标注。
+- `Makefile` — 默认编译英文报告 PDF；`make template` 可编译保留的中文模板，`make clean` 清理中间文件。
 - `.gitignore` — 忽略 `submission/.build/` 中间编译文件。
 - `README.md` — 补充 `make` 编译说明。
-- `submission/carbon_futures_contract_template.pdf` — 初步编译预览，仍含待填写内容，不能作为最终提交稿。
+- `submission/carbon_futures_contract_template.pdf` — 中文模板预览，仍含待填写内容，不能作为最终提交稿。
+- `submission/carbon_futures_contract_report.pdf` — 英文 AER 风格草稿预览，仍含待核实内容，不能作为最终提交稿。
 
 ## Tests
 - `file 'sources/Group Assignment0914.docx' research/gfex-futures/*.pdf` — PASS；原件识别为 DOCX，研究资料识别为 PDF，四份正式合约转载及钯合约表摘页均为一页。
@@ -64,12 +68,15 @@
 - 2026-09-30：页眉更新后运行 `make` 通过；PDF 仍为 A4 两页，已查看第一页顶部预览，页眉与正文无重叠；最终编译日志无未定义引用、警告或版面溢出，`git diff --check` 通过。
 - 2026-09-30：小页眉版本运行 `make` 通过，PDF 为 A4 两页；已目视检查第一页顶部层级，PDF 文本含正确页眉及正文标题且不含小组/成员/日期占位；日志无警告、未定义引用或版面溢出，`git diff --check` 通过。
 - 2026-09-30：再次运行 `make` 通过，PDF 仍为 A4 两页；逐页文本核查显示第一页只有正文主标题、第二页开始出现“小页眉”文字；日志无警告或版面溢出，`git diff --check` 通过。
+- 2026-09-30：英文稿运行 `make` 通过，输出 A4 两页 PDF；`pdftotext -layout` 核实十项合约字段、四个核心模块与参考文献占位，目视检查表格完整落在第一页；最终 LaTeX 日志无警告或版面溢出。
+- 2026-09-30：双栏版本运行 `make` 通过，输出 A4 两页 PDF；目视检查正文为双栏、合约表通栏且十项完整；LaTeX 日志无警告或版面溢出，`git diff --check` 通过。
 
 ## Known Issues / Blockers
 - 钯正式一页合约尚未取得。此前记录广期所官网 HTTPS 证书不匹配、HTTP 返回访问校验脚本；这一访问状况本次未重新测试。
 - 四份正式合约是公开转载件，尚未与广期所官网原始字节做哈希同一性核对；合约表的基础涨跌停板和保证金不代表当前执行标准。
 - 尚无已核实的小组成员、分工、讨论日期或碳期货拟议参数；不要预填。截止日期年份及“5 页 / 2,000 words”的解释仍需课程确认。
 - 目前只形成设计方法和来源地图；所选标的、所有拟议参数、实际交割对接能力及可用逐日数据仍待核实。
+- 英文 AER 风格 PDF 是排版草稿；摘要、正文论证、表中条款及 APA 参考文献均需以核实材料替换。真实会议纪要和分工说明须另行完成。
 
 ## Resume Here
 **Next unfinished task:** 按 `docs/CONTRACT_DESIGN_WORKFLOW.md` 第 1–2 步收集 CEA/CCER 同口径逐日价格、成交量及合格资产范围资料，形成标的比较底稿。
