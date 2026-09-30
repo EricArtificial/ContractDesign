@@ -24,6 +24,7 @@
 - [x] 2026-09-30：按用户要求将小页眉改为仅从第二页显示；第一页使用无页眉但保留页码的样式。
 - [x] 2026-09-30：依据 AER 官方排版指引，将现有中文待填写模板另制为英文 AER 风格报告草稿 `submission/carbon_futures_contract_report.tex` 及 PDF。采用无封面首页、英文标题与 100 词以内摘要占位、无标题引言、罗马数字章节、booktabs 三栏合约表、11 点字体、1.5 倍行距与 1 英寸页边距。作业要求的 APA 参考文献优先于 AER 通常使用的 Chicago 作者—年份格式；原中文模板和用户的未提交改动保留。报告仍是待填写草稿，不含已核实合约参数或正式参考文献。
 - [x] 2026-09-30：依用户新要求将英文报告改为更紧凑的双栏正文；合约规格表保持跨双栏通栏。为适应版面，英文稿现用 10 点字体、1.12 倍行距和 0.82 英寸页边距；这覆盖上一条记录中的字号、行距及页边距，仍为课程报告的 AER 风格草稿而非 AER 期刊投稿规格。
+- [x] 2026-09-30：按用户明确指示，将 `intermediate/preparatory/contract_design_preparation.tex` 定为最终设计中文稿的主文件，篇幅不限；写作采用面向读者的 Writing 模式，过程与核验记录不进入成品正文。`submission/` 暂不修改，除非用户明确要求。已同步 `AGENTS.md`、两处 README 和主文件头部说明；主文件目前仍是待填写框架，尚未完成设计论证。
 
 ## Current Task
 - [ ] 收集 CEA 与 CCER 同口径的逐日价格、成交量及合格资产范围资料，按 `docs/CONTRACT_DESIGN_WORKFLOW.md` 第 1–2 步形成标的比较底稿。
@@ -32,13 +33,13 @@
 - [ ] 核对钯期货正式一页合约的可获取性及五个现有品种的合约版本；记录查得结果与仍未能核实的部分。
 - [ ] 在来源地图的待补证据清单基础上，完成 CEA/CCER 标的比较与参数依据记录。
 - [ ] 设计碳期货合约并撰写、核查报告。
-- [ ] 在提交版 TeX 模板中填入经核实的方案、来源与真实小组信息，并核对正文长度及报告页数。
+- [ ] 在指定中文设计稿中写入经核实的方案、来源与必要计算；用户明确要求制作课程提交版时，再核对提交版正文长度、报告页数和附件。
 - [ ] 根据真实小组活动整理附件，导出并核查提交 PDF。
 
 ## Architectural Decisions
 - 原始作业 `sources/Group Assignment0914.docx` 优先于此前对话概述；作业要求整理见 `docs/ASSIGNMENT_REQUIREMENTS.md`。
 - 当前指令和相关实际文件优先；`docs/IMPLEMENTATION_PROGRESS.md` 仅在需要恢复或同步进度时读取，避免把旧记录当作实时事实。
-- 研究依据放在 `research/`，提交稿放在 `submission/`；会议与贡献记录只能依据真实小组活动填写。
+- 研究依据放在 `research/`；最终设计中文稿的主文件是 `intermediate/preparatory/contract_design_preparation.tex`，不受字数和页数限制。写作时用面向读者的成品正文，不混入审计过程或修改说明；`submission/` 暂不修改，除非用户明确要求。会议与贡献记录只能依据真实小组活动填写。
 - 作业只写“10 月 13 日课前”，未注明年份或具体钟点；提交前核对课程信息。
 - 合约设计先验证标的、交割/最终价格的可执行性，再确定数值条款；外部交易所与美国监管资料仅作方法参照，不作为中国规则。
 
@@ -88,6 +89,7 @@
 - `docs/CONTRACT_DESIGN_WORKFLOW.md`
 - `research/contract-design/SOURCE_MAP.md`
 - `research/contract-design/GLO_CARBON_RIGHTS_DESIGN_REVIEW.md`
+- `intermediate/preparatory/contract_design_preparation.tex`
 - `docs/ASSIGNMENT_REQUIREMENTS.md`
 - `sources/Group Assignment0914.docx`
 
