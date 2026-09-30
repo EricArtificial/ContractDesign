@@ -1,0 +1,18 @@
+TradingDate [交易日期] - 
+CityName [城市名称] - 
+TradingType [交易品种简称] - 
+OpenPrice [开盘价] - 
+HighPrice [最高价] - 
+LowPrice [最低价] - 
+AvgPrice [成交均价] - 
+ClosePrice [收盘价] - 
+Volume [总成交量] - 
+Amount [总成交额] - 
+ChangeRatio [涨跌幅(%)] - 
+PreClosePrice [前收盘价] - null
+ListingVolume [挂牌协议成交量] - null
+ListingAmount [挂牌协议成交额] - null
+BulkVolume [大宗协议成交量] - null
+BulkAmount [大宗协议成交额] - null
+SingleBidVolume [单项竞价成交量] - null
+SingleBidAmount [单项竞价成交额] - null
