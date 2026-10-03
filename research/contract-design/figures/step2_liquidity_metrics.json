@@ -1,0 +1,64 @@
+{
+  "window": [
+    "2025-03-07",
+    "2025-12-31"
+  ],
+  "volume_unit": "tons",
+  "CEA_source_level": "official_daily_bulletins",
+  "CCER_source_level": "secondary_transcription_with_two_official_corrections",
+  "unallocated_CCER_difference_tons": 9020,
+  "panel_a_x_transform": "log(1 + volume_tons)",
+  "font": "Times New Roman",
+  "figure_inches": [
+    8.4,
+    2.8
+  ],
+  "colors": {
+    "CEA": "#20B795",
+    "CCER": "#EE7B19"
+  },
+  "matplotlib": "3.10.8",
+  "numpy": "2.4.0",
+  "metrics": {
+    "CEA": {
+      "observations": 203,
+      "total_tons": 79011724,
+      "median_tons": 288406.0,
+      "zero_days": 3,
+      "top10_share_pct": 16.354023613002038,
+      "q4_share_pct": 58.934231076896886,
+      "monthly_share_pct": {
+        "3": 1.198823354367005,
+        "4": 2.356983123162836,
+        "5": 4.480412299319022,
+        "6": 5.300650065552297,
+        "7": 7.137879942981626,
+        "8": 6.366810829238457,
+        "9": 14.224209308481866,
+        "10": 13.321833099098052,
+        "11": 22.316199555397624,
+        "12": 23.29619842240121
+      }
+    },
+    "CCER": {
+      "observations": 203,
+      "total_tons": 8835094,
+      "median_tons": 2700.0,
+      "zero_days": 0,
+      "top10_share_pct": 65.39793464563026,
+      "q4_share_pct": 68.27733807925529,
+      "monthly_share_pct": {
+        "3": 11.490143738142459,
+        "4": 3.3879322619544285,
+        "5": 2.1442329872211885,
+        "6": 3.5603243157345017,
+        "7": 3.0165383639381766,
+        "8": 2.7815210568218065,
+        "9": 5.341969196932143,
+        "10": 8.653241267155732,
+        "11": 27.029638847079614,
+        "12": 32.59445796501995
+      }
+    }
+  }
+}
