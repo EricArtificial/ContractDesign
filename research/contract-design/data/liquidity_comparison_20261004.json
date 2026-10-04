@@ -1,0 +1,43 @@
+{
+  "window": [
+    "2025-03-07",
+    "2025-12-31"
+  ],
+  "limitations": [
+    "CEA uses aggregate closing price and listed-trading value, not matched annual-grade price/value.",
+    "CCER uses rounded cross-project daily mean price, not a homogeneous asset closing price.",
+    "CCER secondary daily table remains short by 9020 tons and RMB 631490.20.",
+    "Amihud numbers are mechanical diagnostics only; their ratio is not a liquidity ranking.",
+    "Zero-return counts exclude pairs with zero listed volume on either day; no forward fill."
+  ],
+  "CEA": {
+    "days": 203,
+    "volume_tons": "79011724",
+    "amount_yuan": "4948702642.21",
+    "median_volume_tons": "288406",
+    "zero_volume_days": 3,
+    "positive_volume_le_1000_days": 2,
+    "top10_volume_share_pct": "16.35402361300204005167638160",
+    "q4_volume_share_pct": "58.93423107689689190935765431",
+    "valid_adjacent_trading_day_pairs": 198,
+    "zero_return_pairs": 5,
+    "zero_return_pct": "2.525252525252525252525252525",
+    "mechanical_amihud_proxy_mean_per_million_yuan": "0.001197281621828971173025820818",
+    "mechanical_amihud_proxy_median_per_million_yuan": "0.0003168379088829413823469191948"
+  },
+  "CCER_secondary": {
+    "days": 203,
+    "volume_tons": "8835094",
+    "amount_yuan": "625169946.60",
+    "median_volume_tons": "2700",
+    "zero_volume_days": 0,
+    "positive_volume_le_1000_days": 72,
+    "top10_volume_share_pct": "65.39793464563025588635502916",
+    "q4_volume_share_pct": "68.27733807925529711398656313",
+    "valid_adjacent_trading_day_pairs": 202,
+    "zero_return_pairs": 5,
+    "zero_return_pct": "2.475247524752475247524752475",
+    "mechanical_amihud_proxy_mean_per_million_yuan": "13.05986959716913780485750999",
+    "mechanical_amihud_proxy_median_per_million_yuan": "0.1284716573087626187105134690"
+  }
+}
