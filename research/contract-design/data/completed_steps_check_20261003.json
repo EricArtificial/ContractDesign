@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-03",
+  "cea_checks": "PASS",
+  "csmar_nonempty_fields_equal_official": "PASS",
+  "csmar_blank_fields_corresponding_to_official_zero": {
+    "Volume": 0,
+    "Amount": 0,
+    "ClosePrice": 0,
+    "ListingVolume": 4,
+    "ListingAmount": 4,
+    "BulkVolume": 45,
+    "BulkAmount": 45,
+    "SingleBidVolume": 228,
+    "SingleBidAmount": 228
+  },
+  "cea_zero_total_days": 10,
+  "cea_zero_listed_days": 14,
+  "cea_price_changes_not_margin_calibration": {
+    "successive_observations_after_dropping_zero_listed_days": {
+      "pairs": 228,
+      "median_absolute_change_pct": 0.5772105496696989
+    },
+    "adjacent_exchange_days_with_listed_trade_on_both_days": {
+      "pairs": 219,
+      "median_absolute_change_pct": 0.6232573396752428
+    }
+  },
+  "ccer_unallocated_volume_pct_of_official_year": 0.10198873510676139,
+  "ccer_unallocated_amount_pct_of_official_year": 0.10090903645557114,
+  "ccer_secondary_baseline": {
+    "total_ton": 8835094,
+    "median_ton": 2700,
+    "p90_nearest_rank_ton": 77932,
+    "top10_share_pct": 65.39793464563026,
+    "q4_share_pct": 68.2773380792553,
+    "days_at_most_1000_ton": 72
+  },
+  "ccer_hypothetical_scenarios_not_data_corrections": [
+    {
+      "hypothetical_allocation_date": "2025-09-11",
+      "total_ton": 8844114,
+      "median_ton": 2700,
+      "p90_nearest_rank_ton": 78951,
+      "top10_share_pct": 65.33123611929923,
+      "q4_share_pct": 68.20770288578369,
+      "days_at_most_1000_ton": 72
+    },
+    {
+      "hypothetical_allocation_date": "2025-09-12",
+      "total_ton": 8844114,
+      "median_ton": 2700,
+      "p90_nearest_rank_ton": 77932,
+      "top10_share_pct": 65.33123611929923,
+      "q4_share_pct": 68.20770288578369,
+      "days_at_most_1000_ton": 72
+    }
+  ],
+  "ccer_p90_range_under_all_nonnegative_integer_splits": [
+    77932,
+    78951
+  ],
+  "sha256": {
+    "research/contract-design/data/cea_daily_2025.csv": "030d326599376aa1e84187186934d8ffd1bf70257e3e57a671e0216b3d137125",
+    "research/contract-design/data/ccer_daily_2025_secondary.csv": "d893f556f284fbe9017e49bf440c05cdd946e122730b30e3769be42b022e291b",
+    "CSMAR中国碳排放权交易信息表（日）/GF_CEMISSRIGHTTRADE.csv": "ece6dd23d7fc512fe1e39e956593899c6be7db623620f74b8dbda0e636c642e3"
+  }
+}

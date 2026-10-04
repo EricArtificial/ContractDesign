@@ -8,6 +8,10 @@
 \documentclass[UTF8,a4paper,11pt,oneside,fontset=fandol]{ctexart}
 \usepackage[left=2.25cm,right=2.25cm,top=2.6cm,bottom=2.25cm,headheight=31pt,headsep=16pt,footskip=0.8cm]{geometry}
 \usepackage{array,booktabs,tabularx,longtable}
+\usepackage{graphicx,caption,placeins,amsmath}
+\graphicspath{{research/contract-design/figures/}{../../research/contract-design/figures/}}
+\captionsetup[figure]{font=small,labelfont=bf,labelsep=period,position=bottom}
+\renewcommand{\thesection}{\Roman{section}.}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage[colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
@@ -61,11 +65,34 @@
 \vspace{0.5em}
 
 \section{标的资产与交易品种}
-\noindent\textbf{拟选标的：}\fillin{CEA 或 CCER；写清法定/登记名称及选择结论}。
-说明另一候选品种未被选用的原因。论证所选资产的\textbf{同质性}（年度、批次、项目或适用范围）、\textbf{价格波动}（数据期间、交易方式、缺失与异常）、\textbf{市场潜力}（套保主体、可交易供给、流动性）。逐项附可核实来源，不能用不同口径的全年量与累计量直接比较。
+本方案选择全国碳排放配额（CEA）作为广州期货交易所碳期货的标的，以重点排放单位的配额采购风险为合约设计的起点。企业须按照经核查的排放量清缴配额；当可用配额低于清缴需求时，企业需要从市场购入差额，未来的配额价格因而直接影响履约成本。CEA 期货为这一采购需求提供提前管理价格风险的工具。2025 年，全国碳市场纳入配额管理的重点排放单位达到 3,378 家，覆盖发电、钢铁、水泥和铝冶炼行业，形成了跨行业的潜在套保需求基础（\hyperlink{ref-state2024}{国务院，2024}；\hyperlink{ref-mee2026}{生态环境部，2026}）。
 
-\noindent\textbf{交易单位选择：}\fillin{每手数量与单位}；\fillin{现货交易批量、典型风险敞口及合约价值计算}。欧盟一手 1,000 EUA 仅作对照，不能直接作为本方案取值。
+CEA 的统一计量与登记制度有利于形成清晰的合约标准。每单位配额对应一吨二氧化碳当量，全国注册登记系统统一记录配额的归属、变更和清缴状态。合约以这一登记体系内的配额为交易对象，并通过年度、清缴用途及可划转状态界定合格资产，使相同标准的配额具有一致的履约功能。国家核证自愿减排量（CCER）则来自经登记、核证的减排项目，涉及方法学、项目类型和登记批次等维度；以其设计合约，需要进一步处理项目来源与用途差异。相比之下，CEA 与企业清缴义务的联系更直接，合约标准也更容易围绕年度和登记状态界定（\hyperlink{ref-mee2021}{生态环境部，2021}；\hyperlink{ref-ccer2023}{生态环境部、国家市场监督管理总局，2023}；\hyperlink{ref-mee2024}{生态环境部，2024}）。
 
+CEA 的现货交易基础进一步支持这一选择。2025 年全国 CEA 成交量为 2.346 亿吨，成交额为 146.30 亿元。为比较两类资产的交易基础，本文以新登记 CCER 开始交易的 3 月 7 日为共同样本起点，考察截至 12 月 31 日的 203 个相同交易日，并统一采用挂牌协议交易口径。该期间 CEA 挂牌成交量为 7,901.17 万吨，CCER 官方公布的成交量为 884.41 万吨，前者约为后者的 8.93 倍。统一日期与交易方式后，CEA 的成交规模优势依然明显（\hyperlink{ref-she2025a}{上海环境能源交易所，2025a，2025b}；\hyperlink{ref-ccer2025}{全国温室气体自愿减排交易系统，2025}）。
+
+图\ref{fig:underlying-liquidity} 展示了这一差异在日度分布上的表现。CEA 日挂牌成交量的中位数为 288,406 吨，CCER 整理样本为 2,700 吨；CEA 前十个高成交日占样本成交量的 16.35\%，CCER 为 65.40\%。CEA 的交易规模更大，成交也更分散于不同交易日，为企业分批建立和调整套保头寸提供了更好的现货市场基础。CCER 的项目减排功能及交易发展具有自身价值，本方案优先采用 CEA，是因为其履约需求、标准化条件和现货成交基础更适合配额价格风险管理。
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{step2_liquidity_three_panel.pdf}
+  \caption{CEA 与 CCER 的挂牌成交规模、集中度及月度分布}
+  \label{fig:underlying-liquidity}
+  \begin{minipage}{\textwidth}
+    \footnotesize
+    \textit{注：}样本为 2025 年 3 月 7 日至 12 月 31 日的 203 个共同交易日，保留零成交日。(a) 日成交量经验累积分布，横轴按 $\ln(1+\text{日量})$ 变换，刻度为吨；(b) 将交易日按日量从高到低排序后计算累计成交占比，标记前十日，灰色对角线表示各日等量；(c) 月成交量占各市场样本总量的比例，灰色背景标识第四季度。CCER* 为经官方更正的二次整理样本，与官方年度量仍差 9,020 吨（约 0.102\%），其分布统计为近似值。\par
+    \textit{来源：}\hyperlink{ref-she2025b}{上海环境能源交易所（2025b）}逐日公告；\hyperlink{ref-ccn2025}{碳中和网（2025）}逐日整理表，按全国 CCER 交易系统公告更正。本文计算。
+  \end{minipage}
+\end{figure}
+\FloatBarrier
+
+价格变动使配额采购的时点选择具有经济意义。2025 年 CEA 综合行情最高价为 97.01 元/吨、最低价为 50.34 元/吨，年末收盘价较上年末下降 23.45\%（\hyperlink{ref-she2025a}{上海环境能源交易所，2025a}）。对于存在配额缺口的企业，相同采购数量对应的支出随价格变化而改变；通过与采购期限匹配的期货头寸，企业可以管理这一价格敞口。本文据此将套保功能置于产品设计的核心，并在风险管理部分进一步分析日度价格变动与压力情景。
+
+成交的时间分布决定了合约还须回应履约周期。图\ref{fig:underlying-liquidity}(c) 显示，CEA 样本内 58.93\% 的挂牌成交量集中在第四季度。由此，合约月份应与企业采购和清缴安排相衔接，临近履约阶段的保证金与持仓管理也应考虑集中交易的影响。CEA 较大的现货规模支持产品设计，季节性的交易集中则为月份安排和风险条款提供了具体方向。
+
+交易单位设为每手 1,000 吨二氧化碳当量，按人民币元/吨报价，以兼顾企业套保的数量粒度和单份合约金额。以 2025 年末现货收盘价 74.63 元/吨为估值基准，一手合约对应的名义金额为 74,630 元；价格每变动 1 元/吨，一手盈亏为 1,000 元（\hyperlink{ref-mee2026}{生态环境部，2026}；本文计算）。在整数手数下，以最近整数匹配配额缺口，最大数量偏差为 500 吨。以 10 万吨为敞口规模基准，这一偏差上限对应 0.5\%；其中恰为 10 万吨的采购敞口可用 100 手精确匹配。这一单位允许企业通过手数调整逐步覆盖敞口，也为后文的最小变动价位、保证金和持仓限额提供统一的数量基础。
+
+\clearpage
 \section{标准化合约条款}
 % 每一行：设计内容给出可执行值/规则；设计依据给出逻辑、数据或制度来源。
 % 原件表头：Term | Design Content | Design Basis。提交前删除全部提示词。
@@ -83,8 +110,8 @@
 \bottomrule
 \endfoot
 交易品种及代码 & \fillin{正式拟议名称、代码} & \fillin{标的定义、代码唯一性核对与出处}\\
-交易单位 & \fillin{数量/手} & \fillin{套保规模、现货批量、合约价值及来源}\\
-报价单位 & \fillin{人民币/吨等，明确 CO\textsubscript{2} 或 CO\textsubscript{2}e} & \fillin{与标的计量、现货价格和交割品一致的理由}\\
+交易单位 & 1,000 吨二氧化碳当量/手 & 兼顾套保数量粒度与合约金额；按 74.63 元/吨估值为 74,630 元/手，整数手数取整偏差至多 500 吨。见第 I 节。\\
+报价单位 & 人民币元/吨二氧化碳当量 & 与 CEA 的统一计量及现货价格口径一致；一手盈亏等于价格变动乘以 1,000 吨。\\
 最小变动价位 & \fillin{金额/报价单位} & \fillin{报价精度；每跳盈亏＝价位×交易单位}\\
 每日价格涨跌停板 & \fillin{相对前结算价的幅度及异常处理} & \fillin{逐日波动、履约期尾部风险及压力测试；勿照搬示例 ±6\%}\\
 最低交易保证金 & \fillin{比例及提高条件} & \fillin{合约价值×比例；覆盖风险和履约期调整依据}\\
@@ -119,8 +146,15 @@
 \section*{参考文献}
 % 仅列文中真正使用且已核对原文的来源，按 APA 格式和作者/机构排序。
 % 示例结构：机构/作者. (年份). 文献标题. 出版机构/网站. URL
-\APAEntry{\fillin{按 APA 格式填写已核实来源 1；与正文引注一一对应}}
-\APAEntry{\fillin{按 APA 格式填写已核实来源 2；逐项核对版本及 URL}}
+\APAEntry{\hypertarget{ref-ccer2025}{}全国温室气体自愿减排交易系统. (2025, 12月31日). \textit{2025年全国温室气体自愿减排交易市场运行情况一览}. \href{https://www.ccer.com.cn/wcm/ccer/html/2307ptggc1/20260101/090113981.shtml}{全国 CCER 交易系统}.}
+\APAEntry{\hypertarget{ref-state2024}{}国务院. (2024, 2月5日). \textit{碳排放权交易管理暂行条例}（国务院令第775号）. \href{https://www.mee.gov.cn/zcwj/gwywj/202402/t20240205_1065850.shtml}{生态环境部网站}.}
+\APAEntry{\hypertarget{ref-she2025a}{}上海环境能源交易所. (2025a, 12月31日). \textit{全国碳市场每年综合价格行情及成交信息20250102—20251231}. \href{https://overview.cneeex.com/c/2025-12-31/497010.shtml}{上海环境能源交易所网站}.}
+\APAEntry{\hypertarget{ref-she2025b}{}上海环境能源交易所. (2025b). \textit{2025年全国碳市场每日概况} [逐日交易数据]. \href{https://overview.cneeex.com/qgtpfqjy/mrgk/2025n/}{上海环境能源交易所数据目录}.}
+\APAEntry{\hypertarget{ref-mee2021}{}生态环境部. (2021, 5月19日). \textit{碳排放权登记管理规则（试行）}. \href{https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202105/W020210519636656625912.pdf}{生态环境部网站}.}
+\APAEntry{\hypertarget{ref-mee2024}{}生态环境部. (2024). \textit{2019—2024年度碳排放配额结转方案}. \href{https://www.mee.gov.cn/xxgk2018/xxgk/xxgk06/202407/W020240702328244215540.pdf}{配额分配方案附件5}.}
+\APAEntry{\hypertarget{ref-mee2026}{}生态环境部. (2026, 1月1日). \textit{2025年全国碳市场平稳有序运行 圆满完成年度建设工作}. \href{https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202601/t20260101_1139528.shtml}{生态环境部网站}.}
+\APAEntry{\hypertarget{ref-ccer2023}{}生态环境部, \& 国家市场监督管理总局. (2023, 10月20日). \textit{温室气体自愿减排交易管理办法（试行）}（部令第31号）. \href{https://www.mee.gov.cn/xxgk2018/xxgk/xxgk02/202310/t20231020_1043694.html}{生态环境部网站}.}
+\APAEntry{\hypertarget{ref-ccn2025}{}碳中和网. (2025, 12月31日). \textit{全国温室体自愿减排项目核证自愿减排量（CCER）交易信息（2025年）} [逐日交易数据整理表]. \href{https://www.ccn.ac.cn/carbon-market/ccer/ccerdate/219.html}{碳中和网网站}.}
 
 % 附件仅在有真实讨论记录与成员贡献资料后加入。
 \ifIncludeAppendices

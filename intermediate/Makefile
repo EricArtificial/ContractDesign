@@ -5,6 +5,8 @@ PDF_FILES := $(TEX_FILES:.tex=.pdf)
 
 all: $(PDF_FILES)
 
+preparatory/contract_design_preparation.pdf: ../research/contract-design/figures/step2_liquidity_three_panel.pdf
+
 list:
 	@printf '%s\n' $(TEX_FILES)
 

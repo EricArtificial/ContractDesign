@@ -1,0 +1,31 @@
+{
+  "access_date": "2026-10-03",
+  "entries": [
+    {
+      "name": "cea_2026_index",
+      "url": "https://overview.cneeex.com/qgtpfqjy/mrgk/2026n/",
+      "http_status": 200,
+      "sha256": "101e9dc10c751fafd17d6b2820705a6fbcb0fa19b40f8d55d52948fb406b5c45"
+    },
+    {
+      "name": "cea25_price_scheme",
+      "url": "https://overview.cneeex.com/c/2025-12-29/496985.shtml",
+      "http_status": 200,
+      "sha256": "a67db14def23ec05e67f362794dc81c726feda3183b96565e9de052b7e4b243f",
+      "bytes": 36387
+    },
+    {
+      "name": "cea_20260814",
+      "url": "https://overview.cneeex.com/c/2026-08-14/498134.shtml",
+      "http_status": 200,
+      "sha256": "33e509d9fbf0927b665e29c39c1e236f8c6d4711c49bab74207d7baefdf03eba",
+      "bytes": 33815
+    },
+    {
+      "name": "gfex_pt_page_access_check",
+      "url": "https://www.gfex.com.cn/gfex/sspzb/sspz.shtml",
+      "error": "SSLError",
+      "message": "HTTPSConnectionPool(host='www.gfex.com.cn', port=443): Max retries exceeded with url: /gfex/sspzb/sspz.shtml (Caused by SSLError(CertificateError(\"hostname 'www.gfex.com.cn' doesn't match either of '*.unionpayintl.com', 'unionpayintl.com'\")))"
+    }
+  ]
+}

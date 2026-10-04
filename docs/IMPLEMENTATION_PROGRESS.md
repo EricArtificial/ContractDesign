@@ -26,11 +26,15 @@
 - [x] 2026-09-30：依用户新要求将英文报告改为更紧凑的双栏正文；合约规格表保持跨双栏通栏。为适应版面，英文稿现用 10 点字体、1.12 倍行距和 0.82 英寸页边距；这覆盖上一条记录中的字号、行距及页边距，仍为课程报告的 AER 风格草稿而非 AER 期刊投稿规格。
 - [x] 2026-09-30：按用户明确指示，将 `intermediate/preparatory/contract_design_preparation.tex` 定为最终设计中文稿的主文件，篇幅不限；写作采用面向读者的 Writing 模式，过程与核验记录不进入成品正文。`submission/` 暂不修改，除非用户明确要求。已同步 `AGENTS.md`、两处 README 和主文件头部说明；主文件目前仍是待填写框架，尚未完成设计论证。
 - [x] 2026-09-30：完成 `docs/CONTRACT_DESIGN_WORKFLOW.md` 的第 1 个研究步骤，形成 `research/contract-design/CEA_CCER_UNDERLYING_COMPARISON_2025.md` 与独立中文任务报告 `intermediate/task_reports/01_underlying_cea_ccer_comparison.tex`/`.pdf`。核对 CEA/CCER 权利、账户、年度/项目差异及 2025 年两家交易机构年度数据；以同自然年实现成交量和合规需求为依据，研究性暂选全国 CEA，不包括地方配额或 CCER。完整逐日价量、零成交日、可交割余额及期货交割接口尚未取得，故未确定具体交割年度或合约参数。
-- [x] 2026-09-30：完成第 2 个研究步骤的公开资料核查，形成 `research/contract-design/DAILY_LIQUIDITY_AND_DELIVERABLE_SUPPLY_2025.md`、逐日 CSV、提取程序及独立中文任务报告 `intermediate/task_reports/02_daily_liquidity_and_deliverable_supply.tex`/`.pdf`。官方 CEA 2025 年 243 个交易日的逐日量额与年报完全对账，含 10 个零成交日；工作区 CSMAR 日表的 233 个有成交日九项字段逐行一致。CCER 二次逐日表经两处官方更正后仍比官方全年累计数少 9,020 吨、631,490.20 元，差额尚未可靠分配到具体日。分年度/项目价量、合格资产可用余额和广期所交割账户/划转权限未取得；研究性暂选 CEA 仍成立，但不确定交割年度、交割方式或数值条款。
+- [x] 2026-09-30：完成第 2 个研究步骤的公开资料核查，形成 `research/contract-design/DAILY_LIQUIDITY_AND_DELIVERABLE_SUPPLY_2025.md`、逐日 CSV、提取程序及独立中文任务报告 `intermediate/task_reports/02_daily_liquidity_and_deliverable_supply.tex`/`.pdf`。官方 CEA 2025 年 243 个交易日的逐日量额与年报完全对账，含 10 个零成交日；工作区 CSMAR 日表的 233 个有成交日九字段中的非空值逐行一致，空白经官方公告对照对应零值（2026-10-03 补明）。CCER 二次逐日表经两处官方更正后仍比官方全年累计数少 9,020 吨、631,490.20 元，差额尚未可靠分配到具体日。分年度/项目价量、合格资产可用余额和广期所交割账户/划转权限未取得；研究性暂选 CEA 仍成立，但不确定交割年度、交割方式或数值条款。
 - [x] 2026-09-30：应用户后续要求，将第 2 步的日量、集中度、月度占比和交割证据缺口整合为一张精确 2:1 总图 `research/contract-design/figures/fig_02_integrated_liquidity_2to1.pdf`/`.png`。按截图改用青绿、蓝、灰色基准和橙色重点标注，并压缩标题区、面板间距及底注；保留两张拆分图作为放大检查版本。CCER 图表标明二次表差额，未将差额分配到具体日。
 
+- [x] 2026-10-03：用户明确确定全国碳排放配额（CEA）为合约标的，不包括地方试点配额或 CCER；已同步中文设计主文件、作业要求清单的当前状态及第一步研究底稿的决策更新。具体交割年度、合格状态、交割方式与数值参数仍待确定。
+
+- [x] 2026-10-03：复核已完成步骤，新增问题处理记录、标准库复算脚本和 JSON 结果；CEA 243 行对账通过，明确 CSMAR 非空值与官方一致、554 个空白字段对应官方零值（不能由空白直接推定零）；补两种 CEA 价格变动间隔口径、CCER 未分配差额敏感性和 2026 年 CEA25 价格权重。修正研究底稿及步骤 2 报告，旧步骤报告补后续状态；未修改原始 CSV 或提交版。接口、余额、授权、完整年度品级量额及广期所原件版本核验仍未关闭。
+
 ## Current Task
-- [ ] 核实拟议 CEA 交割年度的逐日挂牌价量、可用余额和登记账户划转权限，再进入 `docs/CONTRACT_DESIGN_WORKFLOW.md` 第 3 步交割与价格规则设计。第 2 步数据图已完成，此项尚未开始。
+- [x] 2026-10-04：完成中文主稿第一节“标的资产与交易品种”，插入现有三联矢量图，补机构—年份引用与 APA 来源。按用户要求采用直接论证的 Writing 模式及 AER 图文组织；提出 1,000 吨/手的课程设计值并同步表中交易单位、报价单位，依据与计算见 `research/contract-design/SECTION1_WRITING_DECISIONS_20261004.md`。`make intermediate` 编译成功，引文和版面检查通过；其余核心章节仍为模板。内置编译器不支持外部图文件，主稿 PDF 使用项目编译结果。
 
 ## Remaining
 - [ ] 核对钯期货正式一页合约的可获取性及五个现有品种的合约版本；记录查得结果与仍未能核实的部分。
@@ -40,6 +44,7 @@
 - [ ] 根据真实小组活动整理附件，导出并核查提交 PDF。
 
 ## Architectural Decisions
+- 2026-10-03 用户决策：明确采用全国碳排放配额（CEA）作为合约标的，不包括地方试点配额和 CCER；此前“研究性暂选”记录保留为历史。交割年度、合格状态、交割方式和数值参数另行确定。
 - 原始作业 `sources/Group Assignment0914.docx` 优先于此前对话概述；作业要求整理见 `docs/ASSIGNMENT_REQUIREMENTS.md`。
 - 当前指令和相关实际文件优先；`docs/IMPLEMENTATION_PROGRESS.md` 仅在需要恢复或同步进度时读取，避免把旧记录当作实时事实。
 - 研究依据放在 `research/`；最终设计中文稿的主文件是 `intermediate/preparatory/contract_design_preparation.tex`，不受字数和页数限制。写作时用面向读者的成品正文，不混入审计过程或修改说明；`submission/` 暂不修改，除非用户明确要求。会议与贡献记录只能依据真实小组活动填写。
@@ -47,6 +52,7 @@
 - 合约设计先验证标的、交割/最终价格的可执行性，再确定数值条款；外部交易所与美国监管资料仅作方法参照，不作为中国规则。
 
 ## Files Changed
+- `research/contract-design/COMPLETED_STEPS_ISSUES_20261003.md`、`check_completed_steps.py`、`data/completed_steps_check_20261003.json`、`raw/20261003/` — 已完成步骤的问题、处理结果、复算和官方原文快照；包含等待用户决定的研究范围。
 - `research/contract-design/figures/` — 第 2 步精确 2:1 整合总图、两张拆分图的 PDF/PNG 及可复现脚本；研究底稿增列口径和链接。
 - `research/contract-design/DAILY_LIQUIDITY_AND_DELIVERABLE_SUPPLY_2025.md` — 第二研究步骤的来源、逐日统计、对账差额、可交割余额与账户权限缺口底稿。
 - `research/contract-design/build_2025_daily_data.py`、`research/contract-design/data/cea_daily_2025.csv`、`research/contract-design/data/ccer_daily_2025_secondary.csv` — 提取程序和带逐行来源的机器可读数据。工作区新增的 CSMAR 原文件仅用于交叉核查，未修改。
@@ -68,6 +74,8 @@
 - `submission/carbon_futures_contract_report.pdf` — 英文 AER 风格草稿预览，仍含待核实内容，不能作为最终提交稿。
 
 ## Tests
+- 2026-10-03：复算脚本通过唯一日期、分方式/年度量额、CSMAR 非空字段及空白对应零值检查；CCER 差额的假设分配不写回实际数据。`make intermediate` 通过，步骤 1/2 报告分别为三页和四页，编译日志无 Warning、Error、Overfull 或 Underfull；`git diff --check` 通过。
+- 2026-10-03：CEA 标的决策更新后，中文设计主文件通过桌面编辑器编译及 `make intermediate`，已更新两页 PDF；`git diff --check` 通过。
 - `file 'sources/Group Assignment0914.docx' research/gfex-futures/*.pdf` — PASS；原件识别为 DOCX，研究资料识别为 PDF，四份正式合约转载及钯合约表摘页均为一页。
 - `shasum -a 256 research/gfex-futures/*.pdf` — PASS；七份 PDF 的哈希与 `research/gfex-futures/INDEX.md` 一致。
 - `git diff --check` — PASS；三个修改文件均无空白错误。
@@ -81,22 +89,25 @@
 - 2026-09-30：英文稿运行 `make` 通过，输出 A4 两页 PDF；`pdftotext -layout` 核实十项合约字段、四个核心模块与参考文献占位，目视检查表格完整落在第一页；最终 LaTeX 日志无警告或版面溢出。
 - 2026-09-30：双栏版本运行 `make` 通过，输出 A4 两页 PDF；目视检查正文为双栏、合约表通栏且十项完整；LaTeX 日志无警告或版面溢出，`git diff --check` 通过。
 - 2026-09-30：第 1 步任务报告运行 `make intermediate` 通过，生成 A4 三页 PDF；`pdftotext` 可抽取研究结论、关键数据和来源，LaTeX 日志无 Overfull/Underfull、Warning 或 Error，`git diff --check` 通过。
-- 2026-09-30：第 2 步 CEA 逐日总量/额及挂牌、大宗、竞价各量额逐项对上官方年报；CSMAR 全国 CEA 233 个有成交日九个数值字段与官方逐日表一致，官方零成交日恰为另 10 日。CCER 日表差额以官方累计数定位至 9 月 10—15 日之间，尚不能归入具体日期。
+- 2026-09-30：第 2 步 CEA 逐日总量/额及挂牌、大宗、竞价各量额逐项对上官方年报；CSMAR 全国 CEA 233 个有成交日九字段的非空值与官方一致、空白对应官方零值（2026-10-03 补明），官方零成交日恰为另 10 日。CCER 日表差额以官方累计数定位至 9 月 10—15 日之间，尚不能归入具体日期。
 - 2026-09-30：第 2 步任务报告运行 `make intermediate` 通过，生成 A4 四页 PDF；`pdftotext` 可抽取结论、计算和来源，LaTeX 日志无 Overfull/Underfull、Warning 或 Error。
 
 ## Known Issues / Blockers
-- 钯正式一页合约尚未取得。此前记录广期所官网 HTTPS 证书不匹配、HTTP 返回访问校验脚本；这一访问状况本次未重新测试。
+- 钯正式一页合约尚未取得。2026-10-03 再次访问官网铂品种页，HTTPS 证书仍与主机名不匹配；本轮未关闭验证。钯正式附件虽已定位但获取失败。
 - 四份正式合约是公开转载件，尚未与广期所官网原始字节做哈希同一性核对；合约表的基础涨跌停板和保证金不代表当前执行标准。
-- 尚无已核实的小组成员、分工、讨论日期或碳期货拟议参数；不要预填。截止日期年份及“5 页 / 2,000 words”的解释仍需课程确认。
-- 已研究性暂选全国 CEA，2025 年官方综合日数据及零成交日已核清；分年度/批次价格和可交割余额仍未取得，实际交割对接能力与所有拟议数值参数仍待核实。CCER 全年官方量额与二次逐日表之间仍差 9,020 吨、631,490.20 元，不能把二次表当作完整官方日数据。
+- 尚无已核实的小组成员、分工和讨论日期；不要预填。第一节已提出交易单位和报价单位，其余数值参数仍待设计。截止日期年份及“5 页 / 2,000 words”的解释仍需课程确认。
+- 已由用户明确确定全国 CEA 为标的，2025 年官方综合日数据及零成交日已核清；分年度/批次价格和可交割余额仍未取得，实际交割对接能力与所有拟议数值参数仍待核实。CCER 全年官方量额与二次逐日表之间仍差 9,020 吨、631,490.20 元，不能把二次表当作完整官方日数据。
 - 英文 AER 风格 PDF 是排版草稿；摘要、正文论证、表中条款及 APA 参考文献均需以核实材料替换。真实会议纪要和分工说明须另行完成。
 
 ## Resume Here
-**Next unfinished task:** 补齐拟议 CEA 年度品级的日价量、可用余额与期货交割账户/划转权限证据，再开展第 3 步交割及价格规则设计。
+**Next unfinished task:** 第一节图文写作已完成；下一建议事项是比较交割与结算方案，并为其余合约条款建立依据，待用户后续指令。未锁定交割方式或年度品级。
 
-**Recommended next step:** 从第二步骤研究底稿的缺口清单开始，向交易机构与登记机构核验指定年度日价量、可用余额及接收账户资格；CCER 逐日转载表的 9 月差额另行定位。钯正式合约版本核对作为独立剩余事项保留。
+**Recommended next step:** 以已完成第一节为基础研究指定年度价量、交割路径和结算价格，随后设计其余条款。1,000 吨/手为本轮提出的设计值，不能从日量推断真实期货成交或可交割深度；接口、授权和余额仍作为相应方案的实施条件。不得在未获明确指令时联系机构。旧问题记录的 A/B 等待状态是历史状态。
 
 **Relevant files:**
+- `research/contract-design/COMPLETED_STEPS_ISSUES_20261003.md`
+- `research/contract-design/check_completed_steps.py`
+- `research/contract-design/data/completed_steps_check_20261003.json`
 - `research/contract-design/DAILY_LIQUIDITY_AND_DELIVERABLE_SUPPLY_2025.md`
 - `research/contract-design/data/cea_daily_2025.csv`
 - `research/contract-design/data/ccer_daily_2025_secondary.csv`
