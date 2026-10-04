@@ -6,6 +6,9 @@
 \usepackage{multicol}
 \usepackage{booktabs,longtable,array}
 \usepackage{xcolor}
+\usepackage[backend=biber,style=apa,citestyle=numeric,sorting=nyt]{biblatex}
+\addbibresource{research/contract-design/references.bib}
+\setlength{\bibitemsep}{\baselineskip}
 \usepackage[colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
 \usepackage{titlesec}
 \usepackage{caption}
@@ -21,7 +24,6 @@
 \definecolor{draftgray}{gray}{0.36}
 \newcommand{\draft}[1]{\textcolor{draftgray}{\textit{[To verify: #1]}}}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
-\newcommand{\APAEntry}[1]{\par\noindent\hangindent=1.5em\hangafter=1 #1\par}
 
 % AER-style numbered sections. The introduction is intentionally unnumbered.
 \renewcommand{\thesection}{\Roman{section}}
@@ -67,7 +69,7 @@
 \endhead
 \bottomrule
 \endfoot
-Trading product and code & \draft{Proposed name and unique code} & \draft{Registered asset definition and code check; cite source}\\
+Trading product and code & \draft{Proposed name and unique code} & \draft{Registered asset definition and code check; add a numbered citation from the shared references.bib}\\
 Trading unit & \draft{Quantity per contract} & \draft{Spot trading size, hedge scale, and contract-value calculation}\\
 Quotation unit & \draft{CNY per tonne of CO\textsubscript{2} or CO\textsubscript{2}e} & \draft{Consistency with the underlying asset and spot quotation}\\
 Minimum price fluctuation & \draft{CNY per quotation unit} & \draft{Price precision and tick value = tick size $\times$ trading unit}\\
@@ -99,9 +101,8 @@ Delivery grade/standard & \draft{Eligible asset or index sample} & \draft{Vintag
 \noindent\textbf{Compliance-cycle risk.} \draft{Identify the applicable allocation and surrender dates, likely demand and deliverable-supply shocks, and rule-based triggers for tighter margin or position limits.} Explain contingency arrangements for registry outages, absent spot trades, changes in eligible assets, and concentrated positions. State the regulatory and technical approvals required before listing.
 
 \section*{References}
-% The course requires APA references, although the AER style guide generally
-% uses Chicago author-date. List only works actually cited in the final text.
-\APAEntry{\draft{Insert verified APA references corresponding to every in-text citation.}}
+% Use \cite{bib-key} for numbered [n] citations. The bibliography is APA formatted.
+\printbibliography[heading=none]
 \end{multicols}
 
 % Prepare the three genuine meeting minutes and individual-contribution

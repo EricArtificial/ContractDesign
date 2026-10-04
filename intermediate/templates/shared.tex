@@ -4,6 +4,9 @@
 \usepackage{array,booktabs,tabularx,longtable}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
+\usepackage[backend=biber,style=apa,citestyle=numeric,sorting=nyt]{biblatex}
+\addbibresource{research/contract-design/references.bib}
+\setlength{\bibitemsep}{\baselineskip}
 \usepackage[colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
 \usepackage{xcolor}
 \usepackage{tikz}
@@ -15,7 +18,6 @@
 \definecolor{bannerteal}{RGB}{69,131,119}
 \newCJKfontfamily\bannerfont{FandolHei-Bold.otf}
 \newcommand{\fillin}[1]{\textcolor{promptgray}{\textbf{【#1】}}}
-\newcommand{\APAEntry}[1]{\par\noindent\hangindent=2em\hangafter=1 #1\par}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \newcommand{\MarketIcon}{%
   \begin{tikzpicture}[x=0.5pt,y=0.5pt,baseline=-1pt,draw=bannerteal,line width=0.9pt,line cap=round,line join=round]

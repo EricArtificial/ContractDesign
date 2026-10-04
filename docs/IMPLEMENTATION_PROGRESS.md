@@ -32,9 +32,10 @@
 - [x] 2026-10-03：用户明确确定全国碳排放配额（CEA）为合约标的，不包括地方试点配额或 CCER；已同步中文设计主文件、作业要求清单的当前状态及第一步研究底稿的决策更新。具体交割年度、合格状态、交割方式与数值参数仍待确定。
 
 - [x] 2026-10-03：复核已完成步骤，新增问题处理记录、标准库复算脚本和 JSON 结果；CEA 243 行对账通过，明确 CSMAR 非空值与官方一致、554 个空白字段对应官方零值（不能由空白直接推定零）；补两种 CEA 价格变动间隔口径、CCER 未分配差额敏感性和 2026 年 CEA25 价格权重。修正研究底稿及步骤 2 报告，旧步骤报告补后续状态；未修改原始 CSV 或提交版。接口、余额、授权、完整年度品级量额及广期所原件版本核验仍未关闭。
+- [x] 2026-10-04：完成中文主稿第一节“标的资产与交易品种”，插入现有三联矢量图，补机构来源与计算依据；提出 1,000 吨/手设计值并同步表中交易单位和报价单位，依据见 `research/contract-design/SECTION1_WRITING_DECISIONS_20261004.md`。`make intermediate` 编译成功，其余核心章节仍为模板。
 
 ## Current Task
-- [x] 2026-10-04：完成中文主稿第一节“标的资产与交易品种”，插入现有三联矢量图，补机构—年份引用与 APA 来源。按用户要求采用直接论证的 Writing 模式及 AER 图文组织；提出 1,000 吨/手的课程设计值并同步表中交易单位、报价单位，依据与计算见 `research/contract-design/SECTION1_WRITING_DECISIONS_20261004.md`。`make intermediate` 编译成功，引文和版面检查通过；其余核心章节仍为模板。内置编译器不支持外部图文件，主稿 PDF 使用项目编译结果。
+- [x] 2026-10-04：依用户要求统一项目 LaTeX 引用：中文设计主稿、两份研究任务报告与英文提交草稿均设置 APA 书目格式和数字型 `\cite`（正文显示为 `[n]`），条目集中在 `research/contract-design/references.bib`。中文机构作者使用拼音排序键；书目采用悬挂缩进和双倍条目间距。根目录及 `intermediate/` 的 Makefile 均将 `.bib` 列为编译依赖。主稿与研究报告已成功编译，PDF 文本显示数字引注及 APA 书目。英文草稿目前没有实际文内引注，书目为空。
 
 ## Remaining
 - [ ] 核对钯期货正式一页合约的可获取性及五个现有品种的合约版本；记录查得结果与仍未能核实的部分。
@@ -67,6 +68,10 @@
 - `research/contract-design/GLO_CARBON_RIGHTS_DESIGN_REVIEW.md` — 新增针对 2021 年法律评论的期货设计审查与现行制度交叉核对。
 - `submission/carbon_futures_contract_template.tex` — 保留可编译的中文模板；附件开关默认关闭，避免空白纪要进入报告。
 - `submission/carbon_futures_contract_report.tex` — 新增英文 AER 风格报告草稿，十项条款与四个核心模块完整保留，未核实内容明确标注。
+- `research/contract-design/references.bib` — 中文主稿、研究报告及英文草稿共用的 APA 书目条目库。
+- `intermediate/preparatory/contract_design_preparation.tex`、`intermediate/task_reports/01_underlying_cea_ccer_comparison.tex`、`intermediate/task_reports/02_daily_liquidity_and_deliverable_supply.tex` — 使用共享 `.bib` 并以数字型 `\cite` 引用。
+- `intermediate/templates/shared.tex`、`intermediate/templates/task_report.tex`、`intermediate/Makefile` — 将共享书目与引用设置接入后续报告模板和构建依赖。
+- `submission/carbon_futures_contract_report.tex`、`Makefile` — 为英文草稿接入同一引文设置，并在 `.bib` 更新时触发重编译。
 - `Makefile` — 默认编译英文报告 PDF；`make template` 可编译保留的中文模板，`make clean` 清理中间文件。
 - `.gitignore` — 忽略 `submission/.build/` 中间编译文件。
 - `README.md` — 补充 `make` 编译说明。
@@ -74,6 +79,7 @@
 - `submission/carbon_futures_contract_report.pdf` — 英文 AER 风格草稿预览，仍含待核实内容，不能作为最终提交稿。
 
 ## Tests
+- 2026-10-04：`make intermediate` 成功编译中文设计主稿及两份研究报告；PDF 文本核实正文为 `[n]`、参考文献由共享 `.bib` 生成。最终日志无未定义引用、Overfull 或 Underfull；`git diff --check` 通过。根目录 `make` 成功编译英文草稿；因草稿尚无文内引注，biblatex 提示参考文献表为空。
 - 2026-10-03：复算脚本通过唯一日期、分方式/年度量额、CSMAR 非空字段及空白对应零值检查；CCER 差额的假设分配不写回实际数据。`make intermediate` 通过，步骤 1/2 报告分别为三页和四页，编译日志无 Warning、Error、Overfull 或 Underfull；`git diff --check` 通过。
 - 2026-10-03：CEA 标的决策更新后，中文设计主文件通过桌面编辑器编译及 `make intermediate`，已更新两页 PDF；`git diff --check` 通过。
 - `file 'sources/Group Assignment0914.docx' research/gfex-futures/*.pdf` — PASS；原件识别为 DOCX，研究资料识别为 PDF，四份正式合约转载及钯合约表摘页均为一页。
