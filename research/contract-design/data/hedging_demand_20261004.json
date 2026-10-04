@@ -1,0 +1,118 @@
+{
+  "observation_year": 2025,
+  "trading_days": 243,
+  "transaction_metrics": {
+    "total_volume_ton": {
+      "annual_ton": 234597856,
+      "monthly_ton": {
+        "1": 1991569,
+        "2": 1295568,
+        "3": 3176453,
+        "4": 5906013,
+        "5": 10370580,
+        "6": 15884675,
+        "7": 11664226,
+        "8": 15108811,
+        "9": 32700907,
+        "10": 41562530,
+        "11": 47753225,
+        "12": 47183299
+      },
+      "q4_ton": 136499054,
+      "q4_share": 0.5818427172667767,
+      "nov_dec_share": 0.40467771367867916,
+      "dec_share": 0.20112416969403166,
+      "interpretation": "Gross market transactions, not identified deficit-firm procurement."
+    },
+    "listed_volume_ton": {
+      "annual_ton": 80059162,
+      "monthly_ton": {
+        "1": 241569,
+        "2": 795568,
+        "3": 957512,
+        "4": 1862293,
+        "5": 3540051,
+        "6": 4188135,
+        "7": 5639762,
+        "8": 5030527,
+        "9": 11238793,
+        "10": 10525810,
+        "11": 17632414,
+        "12": 18406728
+      },
+      "q4_ton": 46564952,
+      "q4_share": 0.5816317687662031,
+      "nov_dec_share": 0.4501563731081772,
+      "dec_share": 0.22991407279531603,
+      "interpretation": "Gross market transactions, not identified deficit-firm procurement."
+    },
+    "block_volume_ton": {
+      "annual_ton": 154201694,
+      "monthly_ton": {
+        "1": 1750000,
+        "2": 500000,
+        "3": 2218941,
+        "4": 4043720,
+        "5": 6830529,
+        "6": 11696540,
+        "7": 5894464,
+        "8": 10073284,
+        "9": 21460114,
+        "10": 30936720,
+        "11": 30020811,
+        "12": 28776571
+      },
+      "q4_ton": 89734102,
+      "q4_share": 0.5819268237092129,
+      "nov_dec_share": 0.38130179036813955,
+      "dec_share": 0.1866164388570206,
+      "interpretation": "Gross market transactions, not identified deficit-firm procurement."
+    },
+    "auction_volume_ton": {
+      "annual_ton": 337000,
+      "monthly_ton": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 130000,
+        "8": 5000,
+        "9": 2000,
+        "10": 100000,
+        "11": 100000,
+        "12": 0
+      },
+      "q4_ton": 200000,
+      "q4_share": 0.5934718100890207,
+      "nov_dec_share": 0.29673590504451036,
+      "dec_share": 0.0,
+      "interpretation": "Gross market transactions, not identified deficit-firm procurement."
+    }
+  },
+  "first_compliance_period_2019_2020": {
+    "deficit_firms": 847,
+    "listed_firms": 2162,
+    "actually_allocated_firms": 2011,
+    "deficit_share_listed": 0.39176688251618874,
+    "deficit_share_actually_allocated": 0.4211834908005967,
+    "gross_deficit_ton_approx": 188000000,
+    "mean_gross_deficit_ton_approx": 221959.8583234947,
+    "ccer_used_ton_approx": 32730000,
+    "gross_deficit_less_all_ccer_ton_illustrative": 155270000,
+    "warning": "Two emission years. CCER recipient overlap, holdings and final settlement adjustments unavailable; residual is not observed procurement."
+  },
+  "changyuan_announced_20260924": {
+    "compliance_emission_year": 2025,
+    "planned_purchase_year": 2026,
+    "deficit_after_carryover_ton_approx": 511200,
+    "planned_budget_yuan_range": [
+      45000000,
+      70000000
+    ],
+    "cost_increase_yuan_if_price_rises_10": 5112000,
+    "contracts_at_1000_ton_illustrative": 511.2,
+    "warning": "Company estimate and authorized plan, not completed purchase or futures participation."
+  }
+}

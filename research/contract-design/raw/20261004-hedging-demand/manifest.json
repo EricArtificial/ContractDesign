@@ -1,0 +1,20 @@
+[
+  {
+    "file": "mee_first_compliance_2022.pdf",
+    "url": "https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202212/P020221230799532329594.pdf",
+    "retrieved": "2026-10-04",
+    "sha256": "bb0a61455ef45eebf25fee021a0ea0f28962b9b7cbe771b0ce3d30c7ba0c96ce"
+  },
+  {
+    "file": "mee_development_2025.pdf",
+    "url": "https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202509/W020250927515316322073.pdf",
+    "retrieved": "2026-10-04",
+    "sha256": "ba325d41186b700249f631b5e61f05eafe65ef2c607cc2d5c521c1614bc01930"
+  },
+  {
+    "file": "mee_development_2026.pdf",
+    "url": "https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202609/W020260920730894576289.pdf",
+    "retrieved": "2026-10-04",
+    "sha256": "b2f8607d0ca2fed024aab8ef1f6ea112439aca82966a1784952f3541769b02ea"
+  }
+]
