@@ -1,0 +1,47 @@
+{
+  "window": [
+    "2025-03-07",
+    "2025-12-31"
+  ],
+  "regression": "OLS P_t = alpha + beta*t + gamma*t^2; t is original trading-day index",
+  "sample_filter": "Daily changes require positive volume on both adjacent trading days; regression excludes zero-volume days without renumbering time.",
+  "relative_residual_definition": "User confirmed: SD(residual)/sample mean price, reported in percent.",
+  "dispersion_denominator": "n-1 for descriptive sample standard deviations; not regression standard error n-3",
+  "CEA": {
+    "window_trading_days": 203,
+    "valid_adjacent_trading_day_pairs": 198,
+    "daily_price_change_sd_yuan_per_ton": 1.0657409554076573,
+    "regression_observations": 200,
+    "time_center": 102.44,
+    "time_scale": 57.83603029254342,
+    "coefficients_in_centered_scaled_time": [
+      66.48700854661,
+      -7.546137608027326,
+      2.562241453390035
+    ],
+    "minimum_fitted_price": 60.93103504717811,
+    "sample_mean_price_yuan_per_ton": 69.04924999999999,
+    "residual_sample_sd_yuan_per_ton": 5.1536456381259494,
+    "sd_residual_over_mean_price_pct": 7.4637242810399105,
+    "normal_equation_max_absolute_error": 7.617018127348274e-12
+  },
+  "CCER_secondary": {
+    "window_trading_days": 203,
+    "valid_adjacent_trading_day_pairs": 202,
+    "daily_price_change_sd_yuan_per_ton": 7.141986781418139,
+    "regression_observations": 203,
+    "time_center": 101.0,
+    "time_scale": 58.60034129593445,
+    "coefficients_in_centered_scaled_time": [
+      79.41281249047327,
+      -10.350806407665438,
+      1.020537263221314
+    ],
+    "minimum_fitted_price": 64.6043852965913,
+    "sample_mean_price_yuan_per_ton": 80.43334975369457,
+    "residual_sample_sd_yuan_per_ton": 7.483447939255776,
+    "sd_residual_over_mean_price_pct": 9.30391182534585,
+    "normal_equation_max_absolute_error": 6.821210263296962e-13
+  },
+  "interpretation": "Residual level dispersion around a fitted trend, not daily return volatility or risk after hedging. CEA/CCER price definitions differ."
+}

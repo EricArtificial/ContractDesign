@@ -1,7 +1,8 @@
-"""Reproduce the three-panel 2025 liquidity figure from the research CSVs.
+"""Reproduce the 2025 liquidity figure from the research CSVs.
 
 Requires matplotlib==3.10.8 and numpy==2.4.0. No network access is used.
 Run with any configured Python containing these packages, from any directory.
+Add --include-prices to insert a two-row price panel at the left.
 """
 
 from pathlib import Path
@@ -11,14 +12,17 @@ os.environ.setdefault("MPLCONFIGDIR", "/private/tmp/contract-design-matplotlib")
 
 import csv
 import json
+import argparse
 from collections import defaultdict
+from datetime import datetime
 
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib import font_manager
+import matplotlib.dates as mdates
 from matplotlib.lines import Line2D
-from matplotlib.ticker import FixedLocator, NullLocator
+from matplotlib.ticker import FixedLocator, NullLocator, MaxNLocator
 import numpy as np
 
 
@@ -30,16 +34,42 @@ STYLES = {"CEA": "-", "CCER": (0, (4, 2))}
 FIGURE_SIZE = (8.4, 2.8)
 
 
-def load(file, volume_col):
+def load(file, volume_col, dtype=np.int64):
     with (DATA / file).open(encoding="utf-8-sig", newline="") as stream:
         rows = [r for r in csv.DictReader(stream) if START <= r["date"] <= END]
     dates = [r["date"] for r in rows]
     if dates != sorted(set(dates)):
         raise ValueError("Dates must be unique and increasing")
-    return dates, np.array([int(r[volume_col]) for r in rows], dtype=np.int64)
+    return dates, np.array([r[volume_col] for r in rows], dtype=dtype)
 
 
-def main():
+def draw_prices(fig, slot, dates, prices):
+    """Plot source prices and absolute adjacent-observation differences."""
+    rows = slot.subgridspec(2, 1, height_ratios=[3.1, 1], hspace=0)
+    upper = fig.add_subplot(rows[0])
+    lower = fig.add_subplot(rows[1], sharex=upper)
+    time = [datetime.fromisoformat(date) for date in dates]
+    for name, values in prices.items():
+        upper.plot(time, values, color=COLORS[name], linestyle=STYLES[name], linewidth=0.9)
+        differences = np.abs(np.diff(values))
+        lower.fill_between(time[1:], 0, differences, color=COLORS[name], alpha=0.16, linewidth=0)
+        lower.plot(time[1:], differences, color=COLORS[name], linestyle=STYLES[name], linewidth=0.7)
+    upper.set_ylabel("Price (CNY/ton)")
+    upper.set_ylim(min(v.min() for v in prices.values()) - 4,
+                   max(v.max() for v in prices.values()) + 4)
+    upper.yaxis.set_major_locator(MaxNLocator(nbins=4))
+    upper.tick_params(axis="x", bottom=False, labelbottom=False)
+    lower.set_ylabel(r"$|\Delta P|$", labelpad=3)
+    lower.set_ylim(0, max(np.abs(np.diff(v)).max() for v in prices.values()) * 1.10)
+    lower.yaxis.set_major_locator(MaxNLocator(nbins=2, integer=True))
+    lower.set_xlim(time[0], time[-1])
+    lower.xaxis.set_major_locator(mdates.MonthLocator(bymonth=[4, 6, 8, 10, 12]))
+    lower.xaxis.set_major_formatter(mdates.DateFormatter("%b"))
+    lower.set_xlabel("2025")
+    return upper, lower
+
+
+def main(include_prices=False):
     cea_dates, cea = load("cea_daily_2025.csv", "listed_volume_ton")
     ccer_dates, ccer = load("ccer_daily_2025_secondary.csv", "volume_ton")
     if cea_dates != ccer_dates or len(cea_dates) != 203:
@@ -84,9 +114,32 @@ def main():
         "ps.fonttype": 42, "mathtext.fontset": "stix",
         "savefig.dpi": 400,
     })
-    fig, axes = plt.subplots(1, 3, figsize=FIGURE_SIZE)
-    fig.subplots_adjust(left=0.058, right=0.994, top=0.89, bottom=0.21, wspace=0.29)
-    for ax in axes:
+    prices = {}
+    price_metrics = {}
+    size = (11.6, 2.95) if include_prices else FIGURE_SIZE
+    if include_prices:
+        for name, file, column in [("CEA", "cea_daily_2025.csv", "close_yuan_per_ton"),
+                                   ("CCER", "ccer_daily_2025_secondary.csv", "mean_yuan_per_ton")]:
+            dates, values = load(file, column, dtype=np.float64)
+            if dates != cea_dates:
+                raise ValueError("Prices and volumes must share the same dates")
+            prices[name] = values
+            price_metrics[name] = {
+                "observations": len(values), "adjacent_differences": len(values) - 1,
+                "minimum_price": float(values.min()), "maximum_price": float(values.max()),
+                "maximum_absolute_difference": float(np.abs(np.diff(values)).max()),
+            }
+        fig = plt.figure(figsize=size)
+        grid = fig.add_gridspec(1, 4, width_ratios=[1.18, 1, 1, 1],
+                                left=0.047, right=0.995, top=0.89, bottom=0.21, wspace=0.31)
+        price_upper, price_lower = draw_prices(fig, grid[0], cea_dates, prices)
+        axes = [fig.add_subplot(grid[i]) for i in range(1, 4)]
+        all_axes = [price_upper, price_lower, *axes]
+    else:
+        fig, axes = plt.subplots(1, 3, figsize=size)
+        fig.subplots_adjust(left=0.058, right=0.994, top=0.89, bottom=0.21, wspace=0.29)
+        all_axes = axes
+    for ax in all_axes:
         ax.set_axisbelow(True)
         ax.tick_params(direction="out", pad=2.0)
         # Full, light frames echo the reference screenshot; no decorative grid.
@@ -167,11 +220,16 @@ def main():
                ncol=2, frameon=True, facecolor="white", edgecolor="#D7D7D7",
                handlelength=1.7, columnspacing=1.2, borderpad=0.20,
                handletextpad=0.45, borderaxespad=0.15)
-    for ax, title in zip(axes, ["(a) Daily volume distribution", "(b) Volume concentration", "(c) Monthly volume shares"]):
+    titles = (["(b) Daily volume distribution", "(c) Volume concentration", "(d) Monthly volume shares"]
+              if include_prices else ["(a) Daily volume distribution", "(b) Volume concentration", "(c) Monthly volume shares"])
+    label_axes = [price_upper, *axes] if include_prices else axes
+    if include_prices:
+        titles = ["(a) Prices and absolute changes", *titles]
+    for ax, title in zip(label_axes, titles):
         box = ax.get_position()
         fig.text((box.x0 + box.x1) / 2, 0.02, title, ha="center", va="bottom", fontsize=9.5)
 
-    stem = HERE / "step2_liquidity_three_panel"
+    stem = HERE / ("step2_liquidity_four_panel" if include_prices else "step2_liquidity_three_panel")
     fig.savefig(stem.with_suffix(".pdf"), metadata={"Title": "CEA and CCER listed-trading liquidity, 2025", "Author": "ContractDesign research"})
     fig.savefig(stem.with_suffix(".png"), dpi=400)
     plt.close(fig)
@@ -180,14 +238,22 @@ def main():
         "CEA_source_level": "official_daily_bulletins",
         "CCER_source_level": "secondary_transcription_with_two_official_corrections",
         "unallocated_CCER_difference_tons": 9020,
-        "panel_a_x_transform": "log(1 + volume_tons)",
-        "font": font, "figure_inches": list(FIGURE_SIZE), "colors": COLORS,
+        "daily_volume_x_transform": "log(1 + volume_tons)",
+        "font": font, "figure_inches": list(size), "colors": COLORS,
         "matplotlib": matplotlib.__version__, "numpy": np.__version__,
         "metrics": metrics,
     }
-    (HERE / "step2_liquidity_metrics.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
+    if include_prices:
+        result["prices"] = price_metrics
+        result["price_unit"] = "CNY per ton"
+        result["absolute_difference"] = "abs(P[t] - P[t-1]); 202 differences; first date omitted"
+        result["price_definition"] = {"CEA": "published composite closing price", "CCER": "daily mean transaction price"}
+    metrics_file = "step2_liquidity_four_panel_metrics.json" if include_prices else "step2_liquidity_metrics.json"
+    (HERE / metrics_file).write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(result, indent=2))
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--include-prices", action="store_true")
+    main(include_prices=parser.parse_args().include_prices)

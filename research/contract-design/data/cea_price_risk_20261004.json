@@ -1,0 +1,13 @@
+{
+  "window": [
+    "2025-01-02",
+    "2025-12-31"
+  ],
+  "source_rows": 243,
+  "valid_adjacent_trading_day_pairs": 219,
+  "price_definition": "CEA aggregate closing price",
+  "filter": "Both adjacent trading days have positive listed trading volume; no bridging or filling.",
+  "statistic": "Sample SD of current minus previous closing price, denominator n-1",
+  "unit": "yuan per ton",
+  "price_change_sample_sd": 1.0392751878548119
+}
