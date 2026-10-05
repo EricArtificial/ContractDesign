@@ -55,14 +55,16 @@
 
 - [x] 2026-10-04：按用户要求将中文设计稿正文的图片替换为 `step2_liquidity_four_panel.pdf`，同步图题、价格/价差说明及第四季度分布的面板引用 (d)，并更新 `intermediate/Makefile` 的图片依赖。`make intermediate` 通过，正文 PDF 已更新；编译日志无警告或版面溢出，PDF 文本包含新四面板及对应图注，`git diff --check` 通过。
 
-## Current Task
 - [x] 2026-10-05：完成 CEA 标的与可交割范围六项边界，在 I 末尾写入精简正文并完成来源、项目编译及引注检查。具体划转接口和政策应急的存量合约处置细则留待交割章节设计。
+
+## Current Task
+- [x] 2026-10-05：完成本轮中文稿至英文稿的转译完善。修复不存在的英文文献库路径，接入共享中文 APA 书目和中文字体，输出 21 条书目及对应数字编号。逐句核对 35 个中文原句与 53 个英文句子，以及十项条款和八组待定说明；统一表格列宽、对齐和行距，精简图表注，明确全年与共同窗口 Q4 口径及图 (b) 的 ln(1+volume) 坐标。英文 PDF 为 4 页，编译及引注检查通过，记录位于 research/contract-design/translation/。未补定未决参数，中文主稿正文未改。
 
 ## Remaining
 - [ ] 核对钯期货正式一页合约的可获取性及五个现有品种的合约版本；记录查得结果与仍未能核实的部分。
 - [ ] 补足指定年度 CEA 的逐日价格和成交量、可交割余额及账户权限证据；CCER 二次日表差额待定位，再为合约数值参数建依据记录。
 - [ ] 设计碳期货合约并撰写、核查报告。
-- [ ] 在指定中文设计稿中写入经核实的方案、来源与必要计算；用户明确要求制作课程提交版时，再核对提交版正文长度、报告页数和附件。
+- [ ] 在指定中文设计稿中补齐其余合约设计及依据，并同步更新已获授权的英文转译稿；定稿时重新核对提交版字数、页数和真实附件。
 - [ ] 根据真实小组活动整理附件，导出并核查提交 PDF。
 
 ## Architectural Decisions
@@ -74,6 +76,7 @@
 - 合约设计先验证标的、交割/最终价格的可执行性，再确定数值条款；外部交易所与美国监管资料仅作方法参照，不作为中国规则。
 
 ## Files Changed
+- `research/contract-design/translation/REVISION_20261005.md` / `VALIDATION_20261005.json` — 本轮逐句原文/译文对应、待定字段与合约表校对、图表注及编译检查。
 - `research/contract-design/COMPLETED_STEPS_ISSUES_20261003.md`、`check_completed_steps.py`、`data/completed_steps_check_20261003.json`、`raw/20261003/` — 已完成步骤的问题、处理结果、复算和官方原文快照；包含等待用户决定的研究范围。
 - `research/contract-design/figures/` — 第 2 步精确 2:1 整合总图、两张拆分图的 PDF/PNG 及可复现脚本；研究底稿增列口径和链接。
 - `research/contract-design/DAILY_LIQUIDITY_AND_DELIVERABLE_SUPPLY_2025.md` — 第二研究步骤的来源、逐日统计、对账差额、可交割余额与账户权限缺口底稿。
@@ -100,6 +103,10 @@
 - `submission/carbon_futures_contract_report.pdf` — 英文 AER 风格草稿预览，仍含待核实内容，不能作为最终提交稿。
 
 ## Tests
+- 2026-10-05（主标题间距恢复）：按用户指令恢复英文主标题的 center 环境和标题后 0.5 倍基线间距。`make` 通过，PDF 仍为 A4、4 页；最终日志无 Warning/Error/Overfull/Underfull，`git diff --check` 通过。
+- 2026-10-05（标题样式跟进）：按用户指令将英文 section 前后间距恢复为 0.85/0.4 倍基线间距，subsection 改为粗斜体；保留此前缩小的 subsection 与图表间距。`make` 通过，PDF 仍为 A4、4 页；最终日志无 Warning/Error/Overfull/Underfull，`git diff --check` 通过。
+- 2026-10-05（英文版式微调）：按用户指令缩小主标题、section/subsection 前后间距，图表与正文间距设为 6–7pt，图表标题间距设为 4pt。`make` 通过，更新英文 A4、4 页 PDF；最终日志无 Warning/Error/Overfull/Underfull；目视检查第 1–3 页，标题、表格、图注与正文无重叠。
+- 2026-10-05：`make` 与 `make intermediate` 通过；英文 PDF 为 4 页，21 个引用键与 21 条书目一致，十项条款保留，最终英文日志无 Warning/Error/Overfull/Underfull；逐页目视检查通过。PDF 排除合约表和参考文献、保留其他图表文字及图表注和页码的保守计数为 1,677 个英文/数字词项，texcount 正文为 1,092 词。检查结果见 `research/contract-design/translation/VALIDATION_20261005.json`。
 - 2026-10-04：`make intermediate` 成功编译中文设计主稿及两份研究报告；PDF 文本核实正文为 `[n]`、参考文献由共享 `.bib` 生成。最终日志无未定义引用、Overfull 或 Underfull；`git diff --check` 通过。根目录 `make` 成功编译英文草稿；因草稿尚无文内引注，biblatex 提示参考文献表为空。
 - 2026-10-03：复算脚本通过唯一日期、分方式/年度量额、CSMAR 非空字段及空白对应零值检查；CCER 差额的假设分配不写回实际数据。`make intermediate` 通过，步骤 1/2 报告分别为三页和四页，编译日志无 Warning、Error、Overfull 或 Underfull；`git diff --check` 通过。
 - 2026-10-03：CEA 标的决策更新后，中文设计主文件通过桌面编辑器编译及 `make intermediate`，已更新两页 PDF；`git diff --check` 通过。
@@ -124,14 +131,16 @@
 - 四份正式合约是公开转载件，尚未与广期所官网原始字节做哈希同一性核对；合约表的基础涨跌停板和保证金不代表当前执行标准。
 - 尚无已核实的小组成员、分工和讨论日期；不要预填。第一节已提出交易单位和报价单位，其余数值参数仍待设计。截止日期年份及“5 页 / 2,000 words”的解释仍需课程确认。
 - 已由用户明确确定全国 CEA 为标的，2025 年官方综合日数据及零成交日已核清；分年度/批次价格和可交割余额仍未取得，实际交割对接能力与所有拟议数值参数仍待核实。CCER 全年官方量额与二次逐日表之间仍差 9,020 吨、631,490.20 元，不能把二次表当作完整官方日数据。
-- 英文 AER 风格 PDF 是排版草稿；摘要、正文论证、表中条款及 APA 参考文献均需以核实材料替换。真实会议纪要和分工说明须另行完成。
+- 英文稿已完成当前中文正文的转译与中文 APA 书目输出；其余合约条款、交割、价格与风险规则仍沿用中文稿的待定字段。正文保留项目已确定的数字引注，书目条目采用 APA 格式，尚未改为完整的 APA 作者—年份文内引用体系。真实会议纪要和分工说明须另行完成。
 
 ## Resume Here
-**Next unfinished task:** 第一节图文写作已完成；下一建议事项是比较交割与结算方案，并为其余合约条款建立依据，待用户后续指令。未锁定交割方式或年度品级。
+**Latest layout update (2026-10-05):** 已按最新用户指令恢复英文主标题与正文原间距（center 环境及标题后 0.5 倍基线间距）。section 已恢复原间距（前 0.85、后 0.4 倍基线间距），subsection 为粗斜体；此前缩小的 subsection 与图表间距保留。PDF 已重新编译，仍为 4 页，最终日志无警告或版面溢出。后续按用户下一项具体指令继续。
 
-**Latest task result:** 补购需求检索结果已按用户要求精简并入主稿 C 部分，证据与复算口径见 `research/contract-design/HEDGING_DEMAND_RESEARCH_20261004.md`。用长源抵扣结存后的采购敞口支持套保需求；不得把首周期缺口扣减全市场 CCER 的简化残差、2023 行业净缺口或年末成交量称为最新实际补购量。全国企业缺口分位数、前十大占比与买方采购日期联表仍待核实。
+**Next unfinished task:** 当前中文已成文部分的英文转译、中文 APA 书目、表格和图表注校对已完成。中文和英文仍需设计其余条款、交割与结算价格及风险规则；按用户下一项具体指令继续。
 
-**Recommended next step:** 以已完成第一节为基础研究指定年度价量、交割路径和结算价格，随后设计其余条款。1,000 吨/手为本轮提出的设计值，不能从日量推断真实期货成交或可交割深度；接口、授权和余额仍作为相应方案的实施条件。不得在未获明确指令时联系机构。旧问题记录的 A/B 等待状态是历史状态。
+**Latest task result:** 英文稿引用的 references_en.bib 实际不存在，已改接共享中文书目并补中文字体。21 个引用键与 21 条生成书目一致；逐句对应记录含 35 个中文原句、53 个英文句子、十项条款和八组待定说明。英文 PDF 为 A4、4 页，最终日志无警告、未定义引用、字体缺失或 Overfull/Underfull。PDF 可见文本保守计数为 1,677 个英文/数字词项（排除合约表与参考文献），texcount 正文为 1,092 词。make 与 make intermediate 均通过；详细记录见 research/contract-design/translation/。
+
+**Recommended next step:** 后续合约设计先研究指定年度价量、交割路径和结算价格，再确定其余数值条款，并同步中英文稿。已有的 1,000 吨/手是拟议设计值；账户接口、数据授权和可交割余额仍需核实。不得在未获明确指令时联系机构。未虚构会议、成员贡献或未定参数。
 
 **Relevant files:**
 - `research/contract-design/COMPLETED_STEPS_ISSUES_20261003.md`

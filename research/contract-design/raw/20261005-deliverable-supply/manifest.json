@@ -1,0 +1,26 @@
+[
+  {
+    "file": "mee_allocation_2026.pdf",
+    "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202609/W020260903551498752549.pdf",
+    "accessed": "2026-10-05",
+    "error": "<urlopen error [Errno 1] Operation not permitted>"
+  },
+  {
+    "file": "huadianliaoneng_20260826.html",
+    "url": "https://paper.cnstock.com/html/2026-08/26/content_2259408.htm",
+    "accessed": "2026-10-05",
+    "error": "<urlopen error [Errno 1] Operation not permitted>"
+  },
+  {
+    "file": "hengsheng_20260615.pdf",
+    "url": "https://static.stockstar.com/announcement/stock/2026-06-15/1225370112_11.PDF",
+    "accessed": "2026-10-05",
+    "error": "<urlopen error [Errno 1] Operation not permitted>"
+  },
+  {
+    "file": "mee_registration_2021.pdf",
+    "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202105/W020210519636656625912.pdf",
+    "accessed": "2026-10-05",
+    "error": "<urlopen error [Errno 1] Operation not permitted>"
+  }
+]

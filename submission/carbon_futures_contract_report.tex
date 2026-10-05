@@ -1,110 +1,221 @@
-
-\documentclass[10pt,a4paper]{article}
+% !TeX program = xelatex
+% English rendering of the current Chinese design draft, 2026-10-05.
+% Sentence-level revision record: research/contract-design/translation/REVISION_20261005.md.
+% Unresolved source fields remain unresolved. Build this multi-file project with make.
+\documentclass[10pt,a4paper,twocolumn]{article}
 \usepackage[margin=0.82in]{geometry}
 \usepackage{newtxtext,newtxmath}
+\usepackage{xeCJK}
+\setCJKmainfont{FandolSong-Regular.otf}[BoldFont=FandolSong-Bold.otf,ItalicFont=FandolKai-Regular.otf]
+\setCJKsansfont{FandolHei-Regular.otf}[BoldFont=FandolHei-Bold.otf]
 \usepackage{setspace}
-\usepackage{multicol}
-\usepackage{booktabs,longtable,array}
+\usepackage{booktabs,array,tabularx}
+\usepackage{graphicx,caption}
+\graphicspath{{research/contract-design/figures/}}
 \usepackage{xcolor}
 \usepackage[backend=biber,style=apa,citestyle=numeric,sorting=nyt]{biblatex}
 \addbibresource{research/contract-design/references.bib}
-\setlength{\bibitemsep}{\baselineskip}
+\setlength{\bibitemsep}{0.55\baselineskip}
 \usepackage[colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+\usepackage{xurl}
 \usepackage{titlesec}
-\usepackage{caption}
-
-\setstretch{1.12}
-\setlength{\parindent}{1.5em}
+\usepackage{flushend}
+\raggedbottom
+\setstretch{1.08}
+\setlength{\parindent}{1.2em}
 \setlength{\parskip}{0pt}
 \setlength{\columnsep}{0.27in}
-\setlength{\LTpre}{0.5\baselineskip}
-\setlength{\LTpost}{0.35\baselineskip}
-\renewcommand{\arraystretch}{1.12}
-\captionsetup[table]{font=small,labelfont=bf,labelsep=period,justification=centering}
+\setlength{\textfloatsep}{7pt plus 2pt minus 2pt}
+\setlength{\dbltextfloatsep}{7pt plus 2pt minus 2pt}
+\setlength{\floatsep}{6pt plus 2pt minus 2pt}
+\setlength{\dblfloatsep}{6pt plus 2pt minus 2pt}
+\setlength{\intextsep}{6pt plus 2pt minus 2pt}
+\setlength{\emergencystretch}{1em}
+\renewcommand{\arraystretch}{1.08}
+\captionsetup{font=small,labelfont=bf,labelsep=period,justification=centering,skip=4pt}
+\captionsetup[figure]{belowskip=2pt}
+\captionsetup[table]{position=top}
 \definecolor{draftgray}{gray}{0.36}
-\newcommand{\draft}[1]{\textcolor{draftgray}{\textit{[To verify: #1]}}}
+\newcommand{\pending}[1]{\textcolor{draftgray}{\textit{[Pending: #1]}}}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
-
-% AER-style numbered sections. The introduction is intentionally unnumbered.
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+% APA-formatted entries with labels matching the project's numeric citations.
+\DeclareFieldFormat{labelnumberwidth}{\mkbibbrackets{#1}}
+\defbibenvironment{bibliography}
+  {\list{\printtext[labelnumberwidth]{\printfield{labelnumber}}}
+    {\setlength{\labelwidth}{\labelnumberwidth}%
+     \setlength{\leftmargin}{\labelwidth}%
+     \setlength{\labelsep}{\biblabelsep}%
+     \addtolength{\leftmargin}{\labelsep}%
+     \setlength{\itemsep}{\bibitemsep}%
+     \setlength{\parsep}{\bibparsep}}}
+  {\endlist}
+  {\item}
 \renewcommand{\thesection}{\Roman{section}}
 \renewcommand{\thesubsection}{\Alph{subsection}}
 \titleformat{\section}{\normalfont\bfseries\centering}{\thesection.}{0.6em}{}
-\titleformat{\subsection}{\normalfont\itshape}{\thesubsection.}{0.6em}{}
+\titleformat{\subsection}{\normalfont\bfseries\itshape}{\thesubsection.}{0.6em}{}
 \titlespacing*{\section}{0pt}{0.85\baselineskip}{0.4\baselineskip}
-\titlespacing*{\subsection}{0pt}{0.9\baselineskip}{0.3\baselineskip}
+\titlespacing*{\subsection}{0pt}{0.4\baselineskip}{0.15\baselineskip}
 
 \begin{document}
-\begin{center}
-  {\Large\bfseries A Carbon Futures Contract for the Guangzhou Futures Exchange\par}
-  % Add the verified author byline here if the group elects to display it.
-  \vspace{0.45\baselineskip}
-  \begin{minipage}{0.91\textwidth}
-  \small\noindent\textbf{Abstract.} \draft{Summarize the asset, delivery and settlement design, risk controls, and main implementation condition in 100 words or fewer.}
-  \end{minipage}
-\end{center}
-\vspace{0.35\baselineskip}
+\twocolumn[\begin{center}
+{\Large\bfseries Carbon Futures Contract Design for the Guangzhou Futures Exchange\par}
+\end{center}\vspace{0.5\baselineskip}]
 
-\begin{multicols}{2}
-\noindent\draft{State the hedging problem, proposed asset, and relevance to China's carbon market. Make clear that this is a proposed GFEX contract.}
+\section{Underlying Asset and Trading Product}
+% S01--S06
+This proposal selects China Emission Allowances (CEA) as the underlying asset for a Guangzhou Futures Exchange (GFEX) carbon futures contract, focusing on the allowance procurement risk of covered entities. In 2025, the national carbon market covered 3,378 entities in power generation, steel, cement, and aluminum smelting\cite{mee2026}, providing a broad base of potential hedgers. China Certified Emission Reductions (CCER) can also be used for compliance offsetting\cite{ccer2023}, making them a relevant alternative underlying. We therefore compare CEA and CCER in terms of standardization, price risk, and potential hedging demand.
 
-\section{Underlying Asset and Market Rationale}
-\noindent\textbf{Asset selection.} \draft{Choose China Emission Allowances (CEA) or China Certified Emission Reductions (CCER), define the registered asset, and explain the choice.} Evaluate fungibility across eligible vintages or projects, price variation, and market depth using comparable data and cited sources. Do not compare annual CEA volume with cumulative CCER volume as though the periods matched.
+\subsection{Suitability for Standardization}
+% S07--S10
 
-\noindent\textbf{Contract size.} \draft{State tonnes per contract, the relevant CO\textsubscript{2} or CO\textsubscript{2}e unit, and a calculation linking typical hedge size, spot trade size, and contract value.} The European 1,000-EUA contract is a comparator, not a parameter for this proposal.
-\end{multicols}
+CEA is easier to standardize because it has fewer asset-level differences and a common market price reference. Allowance eligibility mainly depends on vintage, registration status, validity for compliance, and transferability\cite{mee2021reg,mee2024carryover}. CCER additionally differs by project, methodology, generation year, and registration batch\cite{ccer2023}. The national registry identifies CEA ownership and status under common rules\cite{mee2021reg}, making delivery grades easier to define by vintage and usable status.
+
+The Shanghai Environment and Energy Exchange publishes composite CEA prices\cite{she2025daily}, providing a common spot reference for futures pricing. CCER prices vary across projects: in 2025, average transaction prices were CNY 81.58 per tonne for grid-connected solar thermal projects and CNY 69.27 for grid-connected offshore wind projects\cite{ccer2025annual}. Changes in the project mix therefore affect the cross-project average.
+
+\subsection{Price Volatility}
+% S11--S16
+CEA price movements directly affect compliance procurement costs for firms with allowance deficits, creating a clear hedging need. In 2025, composite CEA prices ranged from CNY 50.34 to 97.01 per tonne; the year-end closing price fell 23.45\% from the previous year-end\cite{she2025annual}. Over the common trading window, the standard deviation of daily price changes was CNY 1.07 per tonne (Table~\ref{tab:underlying-liquidity}). Procurement risk is therefore observable and measurable.
+
+Figure~\ref{fig:underlying-liquidity}(a) shows frequent sharp CCER price movements over short periods. Such volatility could increase margin and cash-management costs for hedgers and reduce hedge effectiveness. Panels (b) and (c) also show concentrated CCER trading: the ten largest trading days account for 65.40\% of sample volume, indicating less continuous spot-market price formation.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{step2_liquidity_four_panel.pdf}
+\caption{CEA and CCER Prices and Listed Trading Volume}
+\label{fig:underlying-liquidity}
+\begin{minipage}{\textwidth}
+\footnotesize
+\textit{Notes:} March 7--December 31, 2025 (203 days), including zero-trade days. (a) CEA composite closing prices and CCER daily average prices; lower panel: $|P_t-P_{t-1}|$, in CNY/tonne. Price definitions differ; published CEA prices on zero-trade days are retained. (b) Daily volume distribution, using $\ln(1+\mathrm{volume})$ with ticks in tonnes. (c) Cumulative volume ranked from largest to smallest daily volume; markers: top ten days; diagonal: equal daily volumes. (d) Monthly shares of sample volume; shading: Q4.
+\textit{Sources:} As in Table~\ref{tab:underlying-liquidity}. Authors' calculations.
+\end{minipage}
+\end{figure*}
+
+\subsection{Potential Hedging Demand}
+% S17--S23
+Potential demand for long hedges comes from firms that need to purchase additional allowances before surrender. In the first compliance cycle (2019--2020), 847 firms, or 39.18\% of covered entities, had a combined shortfall of about 188 million tonnes\cite{mee2022compliance}. A recent disclosure provides a concrete example: after accounting for its existing allowance balance, Changyuan Electric Power estimated a shortfall of 511,200 tonnes for 2025 compliance and approved purchases in 2026\cite{changyuan2026purchase}. A CNY 10 per tonne price increase would raise its procurement cost by CNY 5.112 million. Deficit firms thus have an economic incentive to lock in CEA purchase prices.
+Procurement risk is also seasonal. Q4 accounted for 79\% of annual CEA volume in 2024\cite{mee2025development} and 58.18\% in 2025\cite{she2025daily}. Concentrated year-end trading strengthens the case for managing procurement prices before the surrender deadline.
+
+\begin{table}[htbp]
+\centering
+\caption{CEA and CCER: Market Activity and Liquidity}
+\label{tab:underlying-liquidity}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\columnwidth}{@{}>{\raggedright\arraybackslash}X R{0.23\columnwidth} R{0.23\columnwidth}@{}}
+\toprule
+\textbf{Indicator} & \multicolumn{1}{c}{\textbf{CEA}} & \multicolumn{1}{c@{}}{\textbf{CCER}}\\
+\midrule
+\multicolumn{3}{@{}l}{\textit{A. Market basis and participants}}\\
+Supply and demand & \textsuperscript{a} & \textsuperscript{b}\\
+Actual trading entities & 1,471 (2024) & 90\textsuperscript{c}\\
+\addlinespace
+\multicolumn{3}{@{}l}{\textit{B. Listed trades in the common window}}\\
+Volume (10,000 tonnes) & 7,901.17 & 884.41\\
+Value (CNY 100 million) & 49.49 & 6.26\\
+Median daily volume (tonnes) & 288,406 & 2,700\\
+Days with volume $\leq$1,000 tonnes & 5 & 72\\
+Top-ten-day volume share (\%) & 16.35 & 65.40\\
+Q4 volume share (\%) & 58.93 & 68.28\\
+\addlinespace
+\multicolumn{3}{@{}l}{\textit{C. Standardized liquidity measures}}\\
+Amihud\textsuperscript{d} & 0.001197 & 13.059870\\
+SD of daily price changes \scriptsize{(CNY/t)\textsuperscript{e}} & 1.07 & 7.14\\
+\bottomrule
+\end{tabularx}
+\begin{minipage}{\columnwidth}
+\vspace{2pt}
+\scriptsize
+\textit{Notes:}
+\textsuperscript{a}Annual allocation; mandatory surrender\cite{state2024};
+
+\textsuperscript{b}Project verification and registration; 5\% compliance offset\cite{ccer2023}.
+
+\textsuperscript{c}cumulative to Aug.\ 2025\cite{mee2025development}.
+
+Panels B--C use listed trades over March 7--December 31, 2025 (203 days),by calculations.
+\textsuperscript{d}Mean of $|r_t|/(A_t/10^6)$\cite{amihud2002}; $r_t$ is the decimal simple return and $A_t$ is traded value in CNY. \textsuperscript{e}SD of daily price differences. CEA uses composite closing prices; CCER uses cross-project average prices, for solely demonstration that CEA is more suitable as an underlying asset for futures contracts.
+
+\textit{Sources:} CEA daily data\cite{she2025daily}; CCER totals\cite{ccer2025annual,ccer2025dec30,ccer2024jan22} and daily data\cite{ccn2025daily}, corrected using official notices\cite{ccer2025jun24,ccer2025jul01}.
+\end{minipage}
+\end{table}
+
+\subsection{Underlying and Deliverable Allowances}
+% S24--S31
+The benchmark deliverable is CEA for the emissions year subject to surrender in the delivery year, with the benchmark vintage fixed when the contract is listed. For example, surrender in 2026 covers 2025 emissions, so the benchmark is 2025 CEA\cite{mee2026work}. Other vintages are eligible only if they have equivalent validity for the same compliance year under MEE rules and have completed any required carry-over registration. The rules currently permit 2026 allowances for 2025 surrender\cite{mee2026allocation}; 2019--2024 allowances qualify only after recall and reissue as 2025 allowances\cite{mee2024carryover,mee2026allocation}.
+
+Only allowances registered in an active national carbon registry account and available for transfer qualify for delivery\cite{mee2021reg}. Surrendered, canceled, frozen, pledged, or otherwise transfer-restricted allowances are excluded.
+
+Benchmark allowances and eligible substitutes may be combined for delivery on a tonne-for-tonne basis, with each vintage verified for validity in the same compliance year. If policy changes affect eligibility, GFEX should update the eligible list and require replacement of ineligible allowances under preannounced contingency rules.
 
 \section{Proposed Contract Specifications}
-\begingroup
-\small\setstretch{1.06}
-\begin{longtable}{@{}L{0.205\textwidth}L{0.255\textwidth}L{0.475\textwidth}@{}}
-\caption{Proposed Carbon Futures Contract Specifications}\label{tab:terms}\\
+% S32--S35
+The proposed trading unit is 1,000 tonnes of CO\textsubscript{2} equivalent per contract. ICE Endex EUA futures also cover 1,000 allowances, each representing one tonne of CO\textsubscript{2} equivalent\cite{iceEuaSpecs}. Domestic purchases can reach 100,000 tonnes: Sinopec bought that quantity of CEA from China Resources Group on July 21, 2021\cite{sinopec2021bulk}, equivalent to 100 proposed contracts. Rounding to the nearest whole contract leaves at most 500 tonnes unmatched, or 0.5\% of that exposure. This size balances hedge precision and the value of an individual contract. Table~\ref{tab:terms} sets out the proposed specifications.
+
+\begin{table*}[!t]
+\centering
+\caption{Proposed Carbon Futures Contract Specifications}
+\label{tab:terms}
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\textwidth}{@{}L{0.225\textwidth}L{0.27\textwidth}>{\raggedright\arraybackslash}X@{}}
 \toprule
 \textbf{Term} & \textbf{Design content} & \textbf{Design basis}\\
 \midrule
-\endfirsthead
-\multicolumn{3}{@{}l}{\small\textit{Table \thetable---continued}}\\
-\toprule
-\textbf{Term} & \textbf{Design content} & \textbf{Design basis}\\
-\midrule
-\endhead
+Trading product and code & \pending{proposed name and code} & \pending{asset definition, code uniqueness, and source}\\
+\addlinespace[2pt]
+Trading unit & 1,000 tonnes of CO\textsubscript{2} equivalent per contract & EUA specifications and a domestic 100,000-tonne purchase\cite{iceEuaSpecs,sinopec2021bulk}. This hedge uses 100 contracts; nearest-integer rounding leaves at most 500 tonnes unmatched. At the 2025 year-end price of CNY 74.63 per tonne\cite{mee2026}, contract value is CNY 74,630.\\
+\addlinespace[2pt]
+Quotation unit & CNY per tonne of CO\textsubscript{2} equivalent & Consistent with CEA measurement\cite{state2024} and spot quotations\cite{she2025daily}. Profit or loss per contract equals the price change times 1,000 tonnes.\\
+\addlinespace[2pt]
+Minimum price fluctuation & \pending{CNY per quotation unit} & \pending{quotation precision; tick value = tick size $\times$ trading unit}\\
+\addlinespace[2pt]
+Maximum daily price fluctuation limit & \pending{percentage of previous settlement price; exception rules} & \pending{daily volatility, compliance-season tail risk, and stress tests; the assignment's $\pm6\%$ is illustrative}\\
+\addlinespace[2pt]
+Minimum trading margin & \pending{rate and escalation conditions} & \pending{contract value $\times$ rate; risk coverage and seasonal adjustment}\\
+\addlinespace[2pt]
+Contract months & \pending{months and listing horizon} & \pending{hedging horizon, allocation and surrender calendar, and liquidity}\\
+\addlinespace[2pt]
+Last trading day & \pending{operational trading-day rule} & \pending{time for price publication or asset transfer; holiday treatment}\\
+\addlinespace[2pt]
+Delivery method & \pending{physical delivery or cash settlement} & \pending{account and registry feasibility or spot-index feasibility; consistent with Section III}\\
+\addlinespace[2pt]
+Delivery grade/standard & \pending{eligible assets or cash-index sample} & \pending{vintage or batch, registration status, exclusions, and price-source consistency}\\
+\addlinespace[2pt]
 \bottomrule
-\endfoot
-Trading product and code & \draft{Proposed name and unique code} & \draft{Registered asset definition and code check; add a numbered citation from the shared references.bib}\\
-Trading unit & \draft{Quantity per contract} & \draft{Spot trading size, hedge scale, and contract-value calculation}\\
-Quotation unit & \draft{CNY per tonne of CO\textsubscript{2} or CO\textsubscript{2}e} & \draft{Consistency with the underlying asset and spot quotation}\\
-Minimum price fluctuation & \draft{CNY per quotation unit} & \draft{Price precision and tick value = tick size $\times$ trading unit}\\
-Maximum daily price fluctuation limit & \draft{Percentage of prior settlement price; exceptional rules} & \draft{Daily price distribution, compliance-season tails, and stress test}\\
-Minimum trading margin & \draft{Base rate and escalation rule} & \draft{Contract value $\times$ rate; stress coverage and seasonal adjustment}\\
-Contract months & \draft{Listed months and listing horizon} & \draft{Allocation, surrender, hedging, and liquidity calendar}\\
-Last trading day & \draft{Operational trading-day rule} & \draft{Time for price publication or asset transfer; holiday treatment}\\
-Delivery method & \draft{Physical or cash settlement} & \draft{Registry-transfer feasibility or spot-index feasibility; match Section III}\\
-Delivery grade/standard & \draft{Eligible asset or index sample} & \draft{Vintage or project eligibility, registration status, exclusions, and source consistency}\\
-\end{longtable}
-\noindent\footnotesize\textit{Notes:} All entries are proposed terms. Replace each bracketed field with a rule and a traceable basis before submission. The illustrative $\pm6\%$ limit in the assignment is not a required parameter.\par
-\endgroup
+\end{tabularx}
+\end{table*}
 
-\begin{multicols}{2}
-\section{Delivery and Reference Prices}
-\noindent\textbf{Delivery choice.} \draft{Compare physical delivery with cash settlement and state the selected approach and its implementation prerequisites.} For physical delivery, specify account eligibility, available and unrestricted assets, prefunding or freezing, registry transfer, payment, and failed delivery. For cash settlement, specify the licensed price source, eligible transactions, observation window, weighting formula, outlier policy, and fallback rule.
+\section{Delivery, Reference Prices, and Settlement Prices}
+% S63--S68: unresolved source instructions remain visible draft fields.
+\noindent\textbf{Method and rationale.} \pending{compare physical delivery and cash settlement; select the method and prerequisites.} Physical delivery requires rules on eligible assets and accounts, freezing or transfer of allowances, payment, delivery failure, and the verification status of registry interfaces. Cash settlement requires index constituents, transaction types, data licensing, an observation window, a weighted calculation formula, and manipulation safeguards.
 
-\noindent\textbf{Daily settlement price.} \draft{Define the futures data source, calculation window and formula, publication time, and no-trade or disruption rule.}
+\noindent\textbf{Daily settlement price.} \pending{futures data source, calculation window and formula, publication time, and no-trade or disruption rules.}
 
-\noindent\textbf{Final settlement price.} \draft{Define the spot-based final price or delivery settlement price, its observation window, publication and correction process, and a fallback.} Explain how the specification promotes convergence between the expiring futures contract and the eligible spot asset. Keep the spot price, daily futures settlement price, and final settlement price distinct.
+\noindent\textbf{Final settlement price.} \pending{source, formula, observation window, publication time, corrections, and fallbacks for the delivery price or final cash settlement price.} Explain convergence with spot prices. Distinguish the spot closing price, daily futures settlement price, and final settlement price.
 
-\section{Risk Management and Implementation Conditions}
-\noindent\textbf{Margin and mark-to-market.} \draft{State the base margin rate, daily variation settlement, escalation triggers near expiry or in stressed markets, and the quantitative basis.}
+\newpage
+\section{Risk Management}
+% S69--S74
+\noindent\textbf{Margin and mark-to-market.} \pending{base rate, escalation near expiry or during abnormal volatility, and calculation basis.}
 
-\noindent\textbf{Price limits.} \draft{State the reference price, limit width, and actions after consecutive limit moves.}
+\noindent\textbf{Price limits.} \pending{reference price, limit width, and measures after consecutive limit hits.}
 
-\noindent\textbf{Position limits and large-position reporting.} \draft{Specify ordinary- and delivery-month limits, beneficial-owner aggregation, hedge exemptions, reporting threshold, required information, and reporting time.}
+\noindent\textbf{Position limits.} \pending{ordinary- and near-expiry-month limits, aggregation of positions by entity, and treatment of hedging positions.}
 
-\noindent\textbf{Compliance-cycle risk.} \draft{Identify the applicable allocation and surrender dates, likely demand and deliverable-supply shocks, and rule-based triggers for tighter margin or position limits.} Explain contingency arrangements for registry outages, absent spot trades, changes in eligible assets, and concentrated positions. State the regulatory and technical approvals required before listing.
+\noindent\textbf{Large-position reporting.} \pending{threshold, content, timing, and verification.}
 
+\noindent\textbf{Compliance cycle.} \pending{surrender or cancellation dates, potential price and supply shocks, and triggers for margin and position-limit adjustments.} Specify contingencies for registry or price-source outages, absent trades, policy changes affecting eligible assets, and concentrated positions. Keep these rules consistent with Table~\ref{tab:terms} and the delivery terms.
+
+\clearpage
 \section*{References}
-% Use \cite{bib-key} for numbered [n] citations. The bibliography is APA formatted.
+\begingroup
+\footnotesize
+\setlength{\bibhang}{1.5em}
+\setlength{\bibitemsep}{0.4\baselineskip}
 \printbibliography[heading=none]
-\end{multicols}
-
-% Prepare the three genuine meeting minutes and individual-contribution
-% statement as separate attachments after those events and contributions exist.
+\endgroup
+% Genuine meeting minutes and the contribution statement remain separate pending attachments.
 \end{document}
