@@ -1,0 +1,190 @@
+{
+  "source_sha256": "030d326599376aa1e84187186934d8ffd1bf70257e3e57a671e0216b3d137125",
+  "window": [
+    "2025-01-02",
+    "2025-12-31"
+  ],
+  "source_rows": 243,
+  "price_definition": "2025 CEA aggregate spot closing price; not single-vintage futures settlement",
+  "percentile_method": "nearest rank ceil(p*n)",
+  "main_filter": "Adjacent rows in official trading-day calendar, both with positive listed volume; no filling or bridging",
+  "main_all": {
+    "n": 219,
+    "abs_return_q95_pct": 3.4186906019007393,
+    "abs_return_q99_pct": 5.356365219915808,
+    "maximum_abs_return": {
+      "previous_date": "2025-11-18",
+      "date": "2025-11-19",
+      "previous_price": "61.76",
+      "price": "66.86",
+      "return_pct": 8.257772020725389,
+      "source_url": "https://overview.cneeex.com/c/2025-11-19/496903.shtml"
+    },
+    "minimum_return_pct": -4.1979469894285275,
+    "exceedance_counts": {
+      "4": 6,
+      "5": 5,
+      "6": 1,
+      "8": 1,
+      "10": 0
+    },
+    "at_or_above_counts": {
+      "4": 6,
+      "5": 5,
+      "6": 1,
+      "8": 1,
+      "10": 0
+    }
+  },
+  "main_Q1_Q3": {
+    "n": 159,
+    "abs_return_q95_pct": 2.5336091003102377,
+    "abs_return_q99_pct": 3.4186906019007393,
+    "maximum_abs_return": {
+      "previous_date": "2025-06-16",
+      "date": "2025-06-17",
+      "previous_price": "69.03",
+      "price": "72.68",
+      "return_pct": 5.287556135013762,
+      "source_url": "https://overview.cneeex.com/c/2025-06-17/496416.shtml"
+    },
+    "minimum_return_pct": -3.4186906019007393,
+    "exceedance_counts": {
+      "4": 1,
+      "5": 1,
+      "6": 0,
+      "8": 0,
+      "10": 0
+    },
+    "at_or_above_counts": {
+      "4": 1,
+      "5": 1,
+      "6": 0,
+      "8": 0,
+      "10": 0
+    }
+  },
+  "main_Q4": {
+    "n": 60,
+    "abs_return_q95_pct": 5.340867663142545,
+    "abs_return_q99_pct": 8.257772020725389,
+    "maximum_abs_return": {
+      "previous_date": "2025-11-18",
+      "date": "2025-11-19",
+      "previous_price": "61.76",
+      "price": "66.86",
+      "return_pct": 8.257772020725389,
+      "source_url": "https://overview.cneeex.com/c/2025-11-19/496903.shtml"
+    },
+    "minimum_return_pct": -4.1979469894285275,
+    "exceedance_counts": {
+      "4": 5,
+      "5": 4,
+      "6": 1,
+      "8": 1,
+      "10": 0
+    },
+    "at_or_above_counts": {
+      "4": 5,
+      "5": 4,
+      "6": 1,
+      "8": 1,
+      "10": 0
+    }
+  },
+  "sensitivity_including_stale_closes": {
+    "n": 242,
+    "abs_return_q95_pct": 3.2181571815718155,
+    "abs_return_q99_pct": 5.356365219915808,
+    "maximum_abs_return": {
+      "previous_date": "2025-11-18",
+      "date": "2025-11-19",
+      "previous_price": "61.76",
+      "price": "66.86",
+      "return_pct": 8.257772020725389,
+      "source_url": "https://overview.cneeex.com/c/2025-11-19/496903.shtml"
+    },
+    "minimum_return_pct": -4.1979469894285275,
+    "exceedance_counts": {
+      "4": 6,
+      "5": 5,
+      "6": 1,
+      "8": 1,
+      "10": 0
+    },
+    "at_or_above_counts": {
+      "4": 6,
+      "5": 5,
+      "6": 1,
+      "8": 1,
+      "10": 0
+    }
+  },
+  "sensitivity_adjacent_traded_observations_may_bridge_days": {
+    "n": 228,
+    "abs_return_q95_pct": 3.296906834599,
+    "abs_return_q99_pct": 5.356365219915808,
+    "maximum_abs_return": {
+      "previous_date": "2025-11-18",
+      "date": "2025-11-19",
+      "previous_price": "61.76",
+      "price": "66.86",
+      "return_pct": 8.257772020725389,
+      "source_url": "https://overview.cneeex.com/c/2025-11-19/496903.shtml"
+    },
+    "minimum_return_pct": -4.1979469894285275,
+    "exceedance_counts": {
+      "4": 6,
+      "5": 5,
+      "6": 1,
+      "8": 1,
+      "10": 0
+    },
+    "at_or_above_counts": {
+      "4": 6,
+      "5": 5,
+      "6": 1,
+      "8": 1,
+      "10": 0
+    }
+  },
+  "stress_assumption": "Pure hypothetical sequential settlement at upper/lower bands, before tick rounding; no claim of actual limit-hit or close-out feasibility",
+  "three_day_stresses": [
+    {
+      "daily_limits_pct": [
+        "6.00",
+        "9.00",
+        "11.00"
+      ],
+      "three_day_up_pct": "28.249400",
+      "three_day_down_pct": "-23.869400",
+      "short_loss_yuan_per_lot_at_74_63": "21082.527220",
+      "long_loss_yuan_per_lot_at_74_63": "17813.733220"
+    },
+    {
+      "daily_limits_pct": [
+        "10.00",
+        "13.00",
+        "15.00"
+      ],
+      "three_day_up_pct": "42.945000",
+      "three_day_down_pct": "-33.445000",
+      "short_loss_yuan_per_lot_at_74_63": "32049.853500",
+      "long_loss_yuan_per_lot_at_74_63": "24960.003500"
+    }
+  ],
+  "inward_rounding_examples": [
+    {
+      "limit_pct": "6.00",
+      "reference_price": "74.63",
+      "upper": "79.10",
+      "lower": "70.16"
+    },
+    {
+      "limit_pct": "10.00",
+      "reference_price": "74.63",
+      "upper": "82.09",
+      "lower": "67.17"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "contract_unit_ton": "1000",
+  "historical_reference_price_yuan_per_ton": "74.63",
+  "reference_source": "mee2026: 2025 year-end CEA closing price",
+  "rounding_assumption": "Arbitrary continuous target price rounded to nearest grid point; bound is not a realized execution cost, bid-ask spread, or fee.",
+  "candidates": [
+    {
+      "tick_yuan_per_ton": "0.001",
+      "tick_value_yuan_per_lot": "1.000",
+      "tick_as_percent_of_reference_price": "0.001339943722363660726249497521",
+      "nearest_grid_rounding_bound_yuan_per_ton": "0.0005",
+      "nearest_grid_rounding_bound_yuan_per_lot": "0.5000"
+    },
+    {
+      "tick_yuan_per_ton": "0.01",
+      "tick_value_yuan_per_lot": "10.00",
+      "tick_as_percent_of_reference_price": "0.01339943722363660726249497521",
+      "nearest_grid_rounding_bound_yuan_per_ton": "0.005",
+      "nearest_grid_rounding_bound_yuan_per_lot": "5.000"
+    },
+    {
+      "tick_yuan_per_ton": "0.05",
+      "tick_value_yuan_per_lot": "50.00",
+      "tick_as_percent_of_reference_price": "0.06699718611818303631247487606",
+      "nearest_grid_rounding_bound_yuan_per_ton": "0.025",
+      "nearest_grid_rounding_bound_yuan_per_lot": "25.000"
+    },
+    {
+      "tick_yuan_per_ton": "0.10",
+      "tick_value_yuan_per_lot": "100.00",
+      "tick_as_percent_of_reference_price": "0.1339943722363660726249497521",
+      "nearest_grid_rounding_bound_yuan_per_ton": "0.05",
+      "nearest_grid_rounding_bound_yuan_per_lot": "50.00"
+    }
+  ],
+  "selected_tick_yuan_per_ton": "0.01"
+}

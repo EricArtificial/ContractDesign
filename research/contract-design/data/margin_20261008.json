@@ -1,0 +1,380 @@
+{
+  "source_sha256": "030d326599376aa1e84187186934d8ffd1bf70257e3e57a671e0216b3d137125",
+  "price_definition": "2025 aggregate CEA spot close, not futures settlement",
+  "window": [
+    "2025-01-02",
+    "2025-12-31"
+  ],
+  "historical_filter": "Consecutive official trading-day rows, all dates with positive listed volume, overlapping windows; group by endpoint date",
+  "liquidation_horizon_assumption": "Two trading days for initial comparison; not evidence that liquidation is possible within two days",
+  "historical": {
+    "1": {
+      "all": {
+        "n": 219,
+        "abs_q99_pct_nearest_rank": 5.356365219915808,
+        "max_abs_window": {
+          "start": "2025-11-18",
+          "end": "2025-11-19",
+          "return_pct": 8.257772020725389
+        },
+        "exceedances": {
+          "6": 1,
+          "8": 1,
+          "10": 0,
+          "12": 0,
+          "15": 0,
+          "20": 0
+        }
+      },
+      "Q1_Q3": {
+        "n": 159,
+        "abs_q99_pct_nearest_rank": 3.4186906019007393,
+        "max_abs_window": {
+          "start": "2025-06-16",
+          "end": "2025-06-17",
+          "return_pct": 5.287556135013762
+        },
+        "exceedances": {
+          "6": 0,
+          "8": 0,
+          "10": 0,
+          "12": 0,
+          "15": 0,
+          "20": 0
+        }
+      },
+      "Q4": {
+        "n": 60,
+        "abs_q99_pct_nearest_rank": 8.257772020725389,
+        "max_abs_window": {
+          "start": "2025-11-18",
+          "end": "2025-11-19",
+          "return_pct": 8.257772020725389
+        },
+        "exceedances": {
+          "6": 1,
+          "8": 1,
+          "10": 0,
+          "12": 0,
+          "15": 0,
+          "20": 0
+        }
+      }
+    },
+    "2": {
+      "all": {
+        "n": 212,
+        "abs_q99_pct_nearest_rank": 9.326522890654559,
+        "max_abs_window": {
+          "start": "2025-11-17",
+          "end": "2025-11-19",
+          "return_pct": 9.912871938188394
+        },
+        "exceedances": {
+          "6": 9,
+          "8": 5,
+          "10": 0,
+          "12": 0,
+          "15": 0,
+          "20": 0
+        }
+      },
+      "Q1_Q3": {
+        "n": 152,
+        "abs_q99_pct_nearest_rank": 4.7240618101545255,
+        "max_abs_window": {
+          "start": "2025-06-16",
+          "end": "2025-06-18",
+          "return_pct": 5.4613935969868175
+        },
+        "exceedances": {
+          "6": 0,
+          "8": 0,
+          "10": 0,
+          "12": 0,
+          "15": 0,
+          "20": 0
+        }
+      },
+      "Q4": {
+        "n": 60,
+        "abs_q99_pct_nearest_rank": 9.912871938188394,
+        "max_abs_window": {
+          "start": "2025-11-17",
+          "end": "2025-11-19",
+          "return_pct": 9.912871938188394
+        },
+        "exceedances": {
+          "6": 9,
+          "8": 5,
+          "10": 0,
+          "12": 0,
+          "15": 0,
+          "20": 0
+        }
+      }
+    },
+    "3": {
+      "all": {
+        "n": 205,
+        "abs_q99_pct_nearest_rank": 11.573236889692586,
+        "max_abs_window": {
+          "start": "2025-12-22",
+          "end": "2025-12-25",
+          "return_pct": 14.2632241813602
+        },
+        "exceedances": {
+          "6": 18,
+          "8": 10,
+          "10": 8,
+          "12": 1,
+          "15": 0,
+          "20": 0
+        }
+      },
+      "Q1_Q3": {
+        "n": 145,
+        "abs_q99_pct_nearest_rank": 5.846422338568935,
+        "max_abs_window": {
+          "start": "2025-06-16",
+          "end": "2025-06-19",
+          "return_pct": 6.388526727509778
+        },
+        "exceedances": {
+          "6": 1,
+          "8": 0,
+          "10": 0,
+          "12": 0,
+          "15": 0,
+          "20": 0
+        }
+      },
+      "Q4": {
+        "n": 60,
+        "abs_q99_pct_nearest_rank": 14.2632241813602,
+        "max_abs_window": {
+          "start": "2025-12-22",
+          "end": "2025-12-25",
+          "return_pct": 14.2632241813602
+        },
+        "exceedances": {
+          "6": 17,
+          "8": 10,
+          "10": 8,
+          "12": 1,
+          "15": 0,
+          "20": 0
+        }
+      }
+    }
+  },
+  "proposal": {
+    "base_pct": 8,
+    "Q4_pct": 12,
+    "T_minus_5_and_later_pct": 20,
+    "one_lot_amount_at_74_63": {
+      "8": "5970.40",
+      "12": "8955.60",
+      "20": "14926.00"
+    }
+  },
+  "ledger_assumptions": "One lot; no fees, tax, interest or extra cash initially; exact arithmetic without tick rounding; all calls paid before next open; D3 margin held pending special action; no position liquidation assumed",
+  "stress_ledgers": [
+    {
+      "case": "ordinary_short_rising",
+      "initial_margin_yuan": "5970.4000",
+      "daily": [
+        {
+          "day": 1,
+          "settlement_price": "79.1078",
+          "limit_pct": "6.00",
+          "loss_yuan": "4477.8000",
+          "margin_rate_collected_pct": "11.00",
+          "required_margin_yuan": "8701.858000",
+          "equity_before_call_yuan": "1492.6000",
+          "cash_call_yuan": "7209.258000",
+          "equity_after_call_yuan": "8701.858000"
+        },
+        {
+          "day": 2,
+          "settlement_price": "86.227502",
+          "limit_pct": "9.00",
+          "loss_yuan": "7119.702000",
+          "margin_rate_collected_pct": "13.00",
+          "required_margin_yuan": "11209.57526000",
+          "equity_before_call_yuan": "1582.156000",
+          "cash_call_yuan": "9627.41926000",
+          "equity_after_call_yuan": "11209.57526000"
+        },
+        {
+          "day": 3,
+          "settlement_price": "95.71252722",
+          "limit_pct": "11.00",
+          "loss_yuan": "9485.02522000",
+          "margin_rate_collected_pct": "13.00",
+          "required_margin_yuan": "12442.6285386000",
+          "equity_before_call_yuan": "1724.55004000",
+          "cash_call_yuan": "10718.0784986000",
+          "equity_after_call_yuan": "12442.6285386000"
+        }
+      ],
+      "cumulative_loss_yuan": "21082.52722000",
+      "additional_cash_total_yuan": "27554.7557586000",
+      "retained_equity_yuan": "12442.6285386000",
+      "total_initial_and_added_cash_yuan": "33525.1557586000",
+      "cash_identity_verified": true
+    },
+    {
+      "case": "ordinary_long_falling",
+      "initial_margin_yuan": "5970.4000",
+      "daily": [
+        {
+          "day": 1,
+          "settlement_price": "70.1522",
+          "limit_pct": "6.00",
+          "loss_yuan": "4477.8000",
+          "margin_rate_collected_pct": "11.00",
+          "required_margin_yuan": "7716.742000",
+          "equity_before_call_yuan": "1492.6000",
+          "cash_call_yuan": "6224.142000",
+          "equity_after_call_yuan": "7716.742000"
+        },
+        {
+          "day": 2,
+          "settlement_price": "63.838502",
+          "limit_pct": "9.00",
+          "loss_yuan": "6313.698000",
+          "margin_rate_collected_pct": "13.00",
+          "required_margin_yuan": "8299.00526000",
+          "equity_before_call_yuan": "1403.044000",
+          "cash_call_yuan": "6895.96126000",
+          "equity_after_call_yuan": "8299.00526000"
+        },
+        {
+          "day": 3,
+          "settlement_price": "56.81626678",
+          "limit_pct": "11.00",
+          "loss_yuan": "7022.23522000",
+          "margin_rate_collected_pct": "13.00",
+          "required_margin_yuan": "7386.1146814000",
+          "equity_before_call_yuan": "1276.77004000",
+          "cash_call_yuan": "6109.3446414000",
+          "equity_after_call_yuan": "7386.1146814000"
+        }
+      ],
+      "cumulative_loss_yuan": "17813.73322000",
+      "additional_cash_total_yuan": "19229.4479014000",
+      "retained_equity_yuan": "7386.1146814000",
+      "total_initial_and_added_cash_yuan": "25199.8479014000",
+      "cash_identity_verified": true
+    },
+    {
+      "case": "Q4_short_rising",
+      "initial_margin_yuan": "8955.6000",
+      "daily": [
+        {
+          "day": 1,
+          "settlement_price": "82.0930",
+          "limit_pct": "10.00",
+          "loss_yuan": "7463.0000",
+          "margin_rate_collected_pct": "15.00",
+          "required_margin_yuan": "12313.950000",
+          "equity_before_call_yuan": "1492.6000",
+          "cash_call_yuan": "10821.350000",
+          "equity_after_call_yuan": "12313.950000"
+        },
+        {
+          "day": 2,
+          "settlement_price": "92.765090",
+          "limit_pct": "13.00",
+          "loss_yuan": "10672.090000",
+          "margin_rate_collected_pct": "17.00",
+          "required_margin_yuan": "15770.06530000",
+          "equity_before_call_yuan": "1641.860000",
+          "cash_call_yuan": "14128.20530000",
+          "equity_after_call_yuan": "15770.06530000"
+        },
+        {
+          "day": 3,
+          "settlement_price": "106.67985350",
+          "limit_pct": "15.00",
+          "loss_yuan": "13914.76350000",
+          "margin_rate_collected_pct": "17.00",
+          "required_margin_yuan": "18135.5750950000",
+          "equity_before_call_yuan": "1855.30180000",
+          "cash_call_yuan": "16280.2732950000",
+          "equity_after_call_yuan": "18135.5750950000"
+        }
+      ],
+      "cumulative_loss_yuan": "32049.85350000",
+      "additional_cash_total_yuan": "41229.8285950000",
+      "retained_equity_yuan": "18135.5750950000",
+      "total_initial_and_added_cash_yuan": "50185.4285950000",
+      "cash_identity_verified": true
+    },
+    {
+      "case": "Q4_long_falling",
+      "initial_margin_yuan": "8955.6000",
+      "daily": [
+        {
+          "day": 1,
+          "settlement_price": "67.1670",
+          "limit_pct": "10.00",
+          "loss_yuan": "7463.0000",
+          "margin_rate_collected_pct": "15.00",
+          "required_margin_yuan": "10075.050000",
+          "equity_before_call_yuan": "1492.6000",
+          "cash_call_yuan": "8582.450000",
+          "equity_after_call_yuan": "10075.050000"
+        },
+        {
+          "day": 2,
+          "settlement_price": "58.435290",
+          "limit_pct": "13.00",
+          "loss_yuan": "8731.710000",
+          "margin_rate_collected_pct": "17.00",
+          "required_margin_yuan": "9933.99930000",
+          "equity_before_call_yuan": "1343.340000",
+          "cash_call_yuan": "8590.65930000",
+          "equity_after_call_yuan": "9933.99930000"
+        },
+        {
+          "day": 3,
+          "settlement_price": "49.66999650",
+          "limit_pct": "15.00",
+          "loss_yuan": "8765.29350000",
+          "margin_rate_collected_pct": "17.00",
+          "required_margin_yuan": "8443.8994050000",
+          "equity_before_call_yuan": "1168.70580000",
+          "cash_call_yuan": "7275.1936050000",
+          "equity_after_call_yuan": "8443.8994050000"
+        }
+      ],
+      "cumulative_loss_yuan": "24960.00350000",
+      "additional_cash_total_yuan": "24448.3029050000",
+      "retained_equity_yuan": "8443.8994050000",
+      "total_initial_and_added_cash_yuan": "33403.9029050000",
+      "cash_identity_verified": true
+    }
+  ],
+  "no_call_short_two_up_limits": [
+    {
+      "case": "ordinary",
+      "initial_margin_pct": "8.00",
+      "two_day_loss_pct": "15.5400",
+      "equity_after_two_days_yuan": "-5627.102000"
+    },
+    {
+      "case": "Q4",
+      "initial_margin_pct": "12.00",
+      "two_day_loss_pct": "24.3000",
+      "equity_after_two_days_yuan": "-9179.490000"
+    },
+    {
+      "case": "Q4_near_expiry",
+      "initial_margin_pct": "20.00",
+      "two_day_loss_pct": "24.3000",
+      "equity_after_two_days_yuan": "-3209.090000"
+    }
+  ]
+}
