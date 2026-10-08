@@ -1,0 +1,1483 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/apasortcite//global/global/global}
+    \entry{amihud2002}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fd253d257e16edd4bdace17cf72df10c}{%
+           family={Amihud},
+           familyi={A\bibinitperiod},
+           given={Yakov},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{fullhash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{fullhashraw}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{bibnamehash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{authorbibnamehash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{authornamehash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{authorfullhash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{authorfullhashraw}{fd253d257e16edd4bdace17cf72df10c}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Markets}
+      \field{number}{1}
+      \field{title}{Illiquidity and stock returns: Cross-section and time-series effects}
+      \field{volume}{5}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{pages}{31\bibrangedash 56}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1016/S1386-4181(01)00024-6
+      \endverb
+    \endentry
+    \entry{ccn2025daily}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a41bf40f1a50029df53d79b976a836e0}{%
+           family={{Carbon Neutrality Network}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a41bf40f1a50029df53d79b976a836e0}
+      \strng{fullhash}{a41bf40f1a50029df53d79b976a836e0}
+      \strng{fullhashraw}{a41bf40f1a50029df53d79b976a836e0}
+      \strng{bibnamehash}{a41bf40f1a50029df53d79b976a836e0}
+      \strng{authorbibnamehash}{a41bf40f1a50029df53d79b976a836e0}
+      \strng{authornamehash}{a41bf40f1a50029df53d79b976a836e0}
+      \strng{authorfullhash}{a41bf40f1a50029df53d79b976a836e0}
+      \strng{authorfullhashraw}{a41bf40f1a50029df53d79b976a836e0}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{month}{12}
+      \field{note}{Compiled daily trading data}
+      \field{title}{Trading information for {China} Certified Emission Reductions ({CCER}), 2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ccn.ac.cn/carbon-market/ccer/ccerdate/219.html
+      \endverb
+      \verb{url}
+      \verb https://www.ccn.ac.cn/carbon-market/ccer/ccerdate/219.html
+      \endverb
+    \endentry
+    \entry{changyuan2026purchase}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=321ac01a69fe86ab99d84e66dd8eedd9}{%
+           family={{CHN Energy Changyuan Electric Power Co., Ltd.}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{321ac01a69fe86ab99d84e66dd8eedd9}
+      \strng{fullhash}{321ac01a69fe86ab99d84e66dd8eedd9}
+      \strng{fullhashraw}{321ac01a69fe86ab99d84e66dd8eedd9}
+      \strng{bibnamehash}{321ac01a69fe86ab99d84e66dd8eedd9}
+      \strng{authorbibnamehash}{321ac01a69fe86ab99d84e66dd8eedd9}
+      \strng{authornamehash}{321ac01a69fe86ab99d84e66dd8eedd9}
+      \strng{authorfullhash}{321ac01a69fe86ab99d84e66dd8eedd9}
+      \strng{authorfullhashraw}{321ac01a69fe86ab99d84e66dd8eedd9}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{month}{9}
+      \field{note}{Announcement No. 2026-057; disclosed in China Securities Journal}
+      \field{title}{Announcement on carbon allowance trading in 2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://epaper.cs.com.cn/zgzqb/html/2026-09/24/nw.D110000zgzqb_20260924_6-B030.htm
+      \endverb
+      \verb{url}
+      \verb https://epaper.cs.com.cn/zgzqb/html/2026-09/24/nw.D110000zgzqb_20260924_6-B030.htm
+      \endverb
+    \endentry
+    \entry{iceEuaSpecs}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4366d57985f50d982a3b2e882893410e}{%
+           family={{ICE Endex}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{4366d57985f50d982a3b2e882893410e}
+      \strng{fullhash}{4366d57985f50d982a3b2e882893410e}
+      \strng{fullhashraw}{4366d57985f50d982a3b2e882893410e}
+      \strng{bibnamehash}{4366d57985f50d982a3b2e882893410e}
+      \strng{authorbibnamehash}{4366d57985f50d982a3b2e882893410e}
+      \strng{authornamehash}{4366d57985f50d982a3b2e882893410e}
+      \strng{authorfullhash}{4366d57985f50d982a3b2e882893410e}
+      \strng{authorfullhashraw}{4366d57985f50d982a3b2e882893410e}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{EUA} Futures}
+      \field{urlday}{4}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ice.com/products/197/eua-futures
+      \endverb
+      \verb{url}
+      \verb https://www.ice.com/products/197/eua-futures
+      \endverb
+    \endentry
+    \entry{mee2021reg}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5aaf1604026502be8c47dc51a0a4d280}{%
+           family={{Ministry of Ecology and Environment}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{bibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorbibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authornamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{5}
+      \field{title}{Rules for carbon allowance registration (trial)}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202105/W020210519636656625912.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202105/W020210519636656625912.pdf
+      \endverb
+    \endentry
+    \entry{mee2022compliance}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5aaf1604026502be8c47dc51a0a4d280}{%
+           family={{Ministry of Ecology and Environment}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{bibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorbibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authornamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Report on the first compliance cycle of the national carbon market}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202212/P020221230799532329594.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202212/P020221230799532329594.pdf
+      \endverb
+    \endentry
+    \entry{mee2024carryover}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5aaf1604026502be8c47dc51a0a4d280}{%
+           family={{Ministry of Ecology and Environment}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{bibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorbibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authornamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \field{extraname}{3}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{10}
+      \field{note}{Annex 5 to the allowance allocation plan}
+      \field{title}{Carryover plan for 2019--2024 carbon allowances}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202410/W020241021392230468687.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202410/W020241021392230468687.pdf
+      \endverb
+    \endentry
+    \entry{mee2025development}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5aaf1604026502be8c47dc51a0a4d280}{%
+           family={{Ministry of Ecology and Environment}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{bibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorbibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authornamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \field{extraname}{4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{title}{National carbon market development report (2025)}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202509/W020250927515316322073.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202509/W020250927515316322073.pdf
+      \endverb
+    \endentry
+    \entry{mee2026allocation}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5aaf1604026502be8c47dc51a0a4d280}{%
+           family={{Ministry of Ecology and Environment}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{bibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorbibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authornamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \field{extraname}{5}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{9}
+      \field{title}{Allowance totals and allocation plan for power generation in 2025 and 2026 and for steel, cement, and aluminium smelting in 2026 under the national carbon market}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202609/W020260903551498752549.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202609/W020260903551498752549.pdf
+      \endverb
+    \endentry
+    \entry{mee2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5aaf1604026502be8c47dc51a0a4d280}{%
+           family={{Ministry of Ecology and Environment}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{bibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorbibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authornamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \field{extraname}{6}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{1}
+      \field{title}{The national carbon market operated steadily in 2025 and completed its annual development tasks}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202601/t20260101_1139528.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202601/t20260101_1139528.shtml
+      \endverb
+    \endentry
+    \entry{mee2026work}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5aaf1604026502be8c47dc51a0a4d280}{%
+           family={{Ministry of Ecology and Environment}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{bibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorbibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authornamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \field{extraname}{7}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{9}
+      \field{month}{2}
+      \field{title}{Notice on national carbon market work in 2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk06/202602/t20260209_1143900.html
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk06/202602/t20260209_1143900.html
+      \endverb
+    \endentry
+    \entry{ccer2023}{report}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5aaf1604026502be8c47dc51a0a4d280}{%
+           family={{Ministry of Ecology and Environment}},
+           familyi={M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=5335156bdb90e9aa566053569ccbbb9e}{%
+           family={{State Administration for Market Regulation}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {Ministry of Ecology}%
+        {Environment}%
+      }
+      \strng{namehash}{31de83e7eb80b4b6d09285a81c290710}
+      \strng{fullhash}{31de83e7eb80b4b6d09285a81c290710}
+      \strng{fullhashraw}{31de83e7eb80b4b6d09285a81c290710}
+      \strng{bibnamehash}{31de83e7eb80b4b6d09285a81c290710}
+      \strng{authorbibnamehash}{31de83e7eb80b4b6d09285a81c290710}
+      \strng{authornamehash}{31de83e7eb80b4b6d09285a81c290710}
+      \strng{authorfullhash}{31de83e7eb80b4b6d09285a81c290710}
+      \strng{authorfullhashraw}{31de83e7eb80b4b6d09285a81c290710}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{10}
+      \field{number}{Ministerial Order No. 31}
+      \field{title}{Measures for the administration of voluntary greenhouse gas emission reduction trading (trial)}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk02/202310/t20231020_1043694.html
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk02/202310/t20231020_1043694.html
+      \endverb
+    \endentry
+    \entry{ccer2024jan22}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e90cec55e885fe60cb4d214d02b22daf}{%
+           family={{National Voluntary Greenhouse Gas Emission Reduction Trading System}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{bibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorbibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authornamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \field{extraname}{1}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{month}{1}
+      \field{title}{Daily market data, 22 {January} 2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2401jysj1/20250306/112037992.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2401jysj1/20250306/112037992.shtml
+      \endverb
+    \endentry
+    \entry{ccer2025jul01}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e90cec55e885fe60cb4d214d02b22daf}{%
+           family={{National Voluntary Greenhouse Gas Emission Reduction Trading System}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{bibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorbibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authornamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \field{extraname}{2}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{7}
+      \field{title}{Daily market data, 1 {July} 2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2502lshq/20250701/170330466.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2502lshq/20250701/170330466.shtml
+      \endverb
+    \endentry
+    \entry{ccer2025jun24}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e90cec55e885fe60cb4d214d02b22daf}{%
+           family={{National Voluntary Greenhouse Gas Emission Reduction Trading System}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{bibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorbibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authornamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \field{extraname}{3}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{month}{6}
+      \field{title}{Daily market data, 24 {June} 2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2502lshq/20250624/170135985.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2502lshq/20250624/170135985.shtml
+      \endverb
+    \endentry
+    \entry{ccer2025dec30}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e90cec55e885fe60cb4d214d02b22daf}{%
+           family={{National Voluntary Greenhouse Gas Emission Reduction Trading System}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{bibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorbibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authornamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \field{extraname}{4}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{30}
+      \field{month}{12}
+      \field{title}{Daily market data, 30 {December} 2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2502lshq/20251230/151804011.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2502lshq/20251230/151804011.shtml
+      \endverb
+    \endentry
+    \entry{ccer2025annual}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e90cec55e885fe60cb4d214d02b22daf}{%
+           family={{National Voluntary Greenhouse Gas Emission Reduction Trading System}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{bibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorbibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authornamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \field{extraname}{5}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradate}{4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{month}{12}
+      \field{title}{Overview of the national voluntary greenhouse gas emission reduction market in 2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2307ptggc1/20260101/090113981.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2307ptggc1/20260101/090113981.shtml
+      \endverb
+    \endentry
+    \entry{she2025annual}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bcbcf229018e21579c70ff0e81cdec56}{%
+           family={{Shanghai Environment and Energy Exchange}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{fullhash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{fullhashraw}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{bibnamehash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{authorbibnamehash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{authornamehash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{authorfullhash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{authorfullhashraw}{bcbcf229018e21579c70ff0e81cdec56}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{month}{12}
+      \field{title}{Annual composite prices and trading information for the national carbon market, 2 {January}--31 {December} 2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://overview.cneeex.com/c/2025-12-31/497010.shtml
+      \endverb
+      \verb{url}
+      \verb https://overview.cneeex.com/c/2025-12-31/497010.shtml
+      \endverb
+    \endentry
+    \entry{she2025daily}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bcbcf229018e21579c70ff0e81cdec56}{%
+           family={{Shanghai Environment and Energy Exchange}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{fullhash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{fullhashraw}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{bibnamehash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{authorbibnamehash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{authornamehash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{authorfullhash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{authorfullhashraw}{bcbcf229018e21579c70ff0e81cdec56}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Daily trading data}
+      \field{title}{National carbon market daily summaries, 2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://overview.cneeex.com/qgtpfqjy/mrgk/2025n/
+      \endverb
+      \verb{url}
+      \verb https://overview.cneeex.com/qgtpfqjy/mrgk/2025n/
+      \endverb
+    \endentry
+    \entry{sinopec2021bulk}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe6166aba87024c69dcc4fc254b1e67c}{%
+           family={{SINOPEC}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe6166aba87024c69dcc4fc254b1e67c}
+      \strng{fullhash}{fe6166aba87024c69dcc4fc254b1e67c}
+      \strng{fullhashraw}{fe6166aba87024c69dcc4fc254b1e67c}
+      \strng{bibnamehash}{fe6166aba87024c69dcc4fc254b1e67c}
+      \strng{authorbibnamehash}{fe6166aba87024c69dcc4fc254b1e67c}
+      \strng{authornamehash}{fe6166aba87024c69dcc4fc254b1e67c}
+      \strng{authorfullhash}{fe6166aba87024c69dcc4fc254b1e67c}
+      \strng{authorfullhashraw}{fe6166aba87024c69dcc4fc254b1e67c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{month}{7}
+      \field{note}{Corporate press release distributed by CNW/Cision}
+      \field{title}{{Sinopec} Closes First Bulk Agreement Transaction of {China}'s National Carbon Market}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.newswire.ca/news-releases/sinopec-closes-first-bulk-agreement-transaction-of-china-s-national-carbon-market-807064396.html
+      \endverb
+      \verb{url}
+      \verb https://www.newswire.ca/news-releases/sinopec-closes-first-bulk-agreement-transaction-of-china-s-national-carbon-market-807064396.html
+      \endverb
+    \endentry
+    \entry{state2024}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=183c14a96985f7bf98e5240b57a07aa4}{%
+           family={{State Council}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{183c14a96985f7bf98e5240b57a07aa4}
+      \strng{fullhash}{183c14a96985f7bf98e5240b57a07aa4}
+      \strng{fullhashraw}{183c14a96985f7bf98e5240b57a07aa4}
+      \strng{bibnamehash}{183c14a96985f7bf98e5240b57a07aa4}
+      \strng{authorbibnamehash}{183c14a96985f7bf98e5240b57a07aa4}
+      \strng{authornamehash}{183c14a96985f7bf98e5240b57a07aa4}
+      \strng{authorfullhash}{183c14a96985f7bf98e5240b57a07aa4}
+      \strng{authorfullhashraw}{183c14a96985f7bf98e5240b57a07aa4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{month}{2}
+      \field{number}{State Council Order No. 775}
+      \field{title}{Interim regulations on carbon emissions trading}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/zcwj/gwywj/202402/t20240205_1065850.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/zcwj/gwywj/202402/t20240205_1065850.shtml
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{amihud2002}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fd253d257e16edd4bdace17cf72df10c}{%
+           family={Amihud},
+           familyi={A\bibinitperiod},
+           given={Yakov},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{fullhash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{fullhashraw}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{bibnamehash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{authorbibnamehash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{authornamehash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{authorfullhash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{authorfullhashraw}{fd253d257e16edd4bdace17cf72df10c}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Markets}
+      \field{number}{1}
+      \field{title}{Illiquidity and stock returns: Cross-section and time-series effects}
+      \field{volume}{5}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{pages}{31\bibrangedash 56}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1016/S1386-4181(01)00024-6
+      \endverb
+    \endentry
+    \entry{ccn2025daily}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a41bf40f1a50029df53d79b976a836e0}{%
+           family={{Carbon Neutrality Network}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a41bf40f1a50029df53d79b976a836e0}
+      \strng{fullhash}{a41bf40f1a50029df53d79b976a836e0}
+      \strng{fullhashraw}{a41bf40f1a50029df53d79b976a836e0}
+      \strng{bibnamehash}{a41bf40f1a50029df53d79b976a836e0}
+      \strng{authorbibnamehash}{a41bf40f1a50029df53d79b976a836e0}
+      \strng{authornamehash}{a41bf40f1a50029df53d79b976a836e0}
+      \strng{authorfullhash}{a41bf40f1a50029df53d79b976a836e0}
+      \strng{authorfullhashraw}{a41bf40f1a50029df53d79b976a836e0}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{month}{12}
+      \field{note}{Compiled daily trading data}
+      \field{title}{Trading information for {China} Certified Emission Reductions ({CCER}), 2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ccn.ac.cn/carbon-market/ccer/ccerdate/219.html
+      \endverb
+      \verb{url}
+      \verb https://www.ccn.ac.cn/carbon-market/ccer/ccerdate/219.html
+      \endverb
+    \endentry
+    \entry{changyuan2026purchase}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=321ac01a69fe86ab99d84e66dd8eedd9}{%
+           family={{CHN Energy Changyuan Electric Power Co., Ltd.}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{321ac01a69fe86ab99d84e66dd8eedd9}
+      \strng{fullhash}{321ac01a69fe86ab99d84e66dd8eedd9}
+      \strng{fullhashraw}{321ac01a69fe86ab99d84e66dd8eedd9}
+      \strng{bibnamehash}{321ac01a69fe86ab99d84e66dd8eedd9}
+      \strng{authorbibnamehash}{321ac01a69fe86ab99d84e66dd8eedd9}
+      \strng{authornamehash}{321ac01a69fe86ab99d84e66dd8eedd9}
+      \strng{authorfullhash}{321ac01a69fe86ab99d84e66dd8eedd9}
+      \strng{authorfullhashraw}{321ac01a69fe86ab99d84e66dd8eedd9}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{month}{9}
+      \field{note}{Announcement No. 2026-057; disclosed in China Securities Journal}
+      \field{title}{Announcement on carbon allowance trading in 2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://epaper.cs.com.cn/zgzqb/html/2026-09/24/nw.D110000zgzqb_20260924_6-B030.htm
+      \endverb
+      \verb{url}
+      \verb https://epaper.cs.com.cn/zgzqb/html/2026-09/24/nw.D110000zgzqb_20260924_6-B030.htm
+      \endverb
+    \endentry
+    \entry{iceEuaSpecs}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4366d57985f50d982a3b2e882893410e}{%
+           family={{ICE Endex}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{4366d57985f50d982a3b2e882893410e}
+      \strng{fullhash}{4366d57985f50d982a3b2e882893410e}
+      \strng{fullhashraw}{4366d57985f50d982a3b2e882893410e}
+      \strng{bibnamehash}{4366d57985f50d982a3b2e882893410e}
+      \strng{authorbibnamehash}{4366d57985f50d982a3b2e882893410e}
+      \strng{authornamehash}{4366d57985f50d982a3b2e882893410e}
+      \strng{authorfullhash}{4366d57985f50d982a3b2e882893410e}
+      \strng{authorfullhashraw}{4366d57985f50d982a3b2e882893410e}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{EUA} Futures}
+      \field{urlday}{4}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ice.com/products/197/eua-futures
+      \endverb
+      \verb{url}
+      \verb https://www.ice.com/products/197/eua-futures
+      \endverb
+    \endentry
+    \entry{mee2021reg}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5aaf1604026502be8c47dc51a0a4d280}{%
+           family={{Ministry of Ecology and Environment}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{bibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorbibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authornamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{5}
+      \field{title}{Rules for carbon allowance registration (trial)}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202105/W020210519636656625912.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202105/W020210519636656625912.pdf
+      \endverb
+    \endentry
+    \entry{mee2022compliance}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5aaf1604026502be8c47dc51a0a4d280}{%
+           family={{Ministry of Ecology and Environment}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{bibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorbibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authornamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Report on the first compliance cycle of the national carbon market}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202212/P020221230799532329594.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202212/P020221230799532329594.pdf
+      \endverb
+    \endentry
+    \entry{mee2024carryover}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5aaf1604026502be8c47dc51a0a4d280}{%
+           family={{Ministry of Ecology and Environment}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{bibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorbibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authornamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \field{extraname}{3}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{10}
+      \field{note}{Annex 5 to the allowance allocation plan}
+      \field{title}{Carryover plan for 2019--2024 carbon allowances}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202410/W020241021392230468687.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202410/W020241021392230468687.pdf
+      \endverb
+    \endentry
+    \entry{mee2025development}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5aaf1604026502be8c47dc51a0a4d280}{%
+           family={{Ministry of Ecology and Environment}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{bibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorbibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authornamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \field{extraname}{4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{title}{National carbon market development report (2025)}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202509/W020250927515316322073.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202509/W020250927515316322073.pdf
+      \endverb
+    \endentry
+    \entry{mee2026allocation}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5aaf1604026502be8c47dc51a0a4d280}{%
+           family={{Ministry of Ecology and Environment}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{bibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorbibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authornamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \field{extraname}{5}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{9}
+      \field{title}{Allowance totals and allocation plan for power generation in 2025 and 2026 and for steel, cement, and aluminium smelting in 2026 under the national carbon market}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202609/W020260903551498752549.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202609/W020260903551498752549.pdf
+      \endverb
+    \endentry
+    \entry{mee2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5aaf1604026502be8c47dc51a0a4d280}{%
+           family={{Ministry of Ecology and Environment}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{bibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorbibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authornamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \field{extraname}{6}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{1}
+      \field{title}{The national carbon market operated steadily in 2025 and completed its annual development tasks}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202601/t20260101_1139528.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202601/t20260101_1139528.shtml
+      \endverb
+    \endentry
+    \entry{mee2026work}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5aaf1604026502be8c47dc51a0a4d280}{%
+           family={{Ministry of Ecology and Environment}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{fullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{bibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorbibnamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authornamehash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhash}{5aaf1604026502be8c47dc51a0a4d280}
+      \strng{authorfullhashraw}{5aaf1604026502be8c47dc51a0a4d280}
+      \field{extraname}{7}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{9}
+      \field{month}{2}
+      \field{title}{Notice on national carbon market work in 2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk06/202602/t20260209_1143900.html
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk06/202602/t20260209_1143900.html
+      \endverb
+    \endentry
+    \entry{ccer2023}{report}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5aaf1604026502be8c47dc51a0a4d280}{%
+           family={{Ministry of Ecology and Environment}},
+           familyi={M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=5335156bdb90e9aa566053569ccbbb9e}{%
+           family={{State Administration for Market Regulation}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {Ministry of Ecology}%
+        {Environment}%
+      }
+      \strng{namehash}{31de83e7eb80b4b6d09285a81c290710}
+      \strng{fullhash}{31de83e7eb80b4b6d09285a81c290710}
+      \strng{fullhashraw}{31de83e7eb80b4b6d09285a81c290710}
+      \strng{bibnamehash}{31de83e7eb80b4b6d09285a81c290710}
+      \strng{authorbibnamehash}{31de83e7eb80b4b6d09285a81c290710}
+      \strng{authornamehash}{31de83e7eb80b4b6d09285a81c290710}
+      \strng{authorfullhash}{31de83e7eb80b4b6d09285a81c290710}
+      \strng{authorfullhashraw}{31de83e7eb80b4b6d09285a81c290710}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{10}
+      \field{number}{Ministerial Order No. 31}
+      \field{title}{Measures for the administration of voluntary greenhouse gas emission reduction trading (trial)}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk02/202310/t20231020_1043694.html
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk02/202310/t20231020_1043694.html
+      \endverb
+    \endentry
+    \entry{ccer2024jan22}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e90cec55e885fe60cb4d214d02b22daf}{%
+           family={{National Voluntary Greenhouse Gas Emission Reduction Trading System}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{bibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorbibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authornamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \field{extraname}{1}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{month}{1}
+      \field{title}{Daily market data, 22 {January} 2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2401jysj1/20250306/112037992.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2401jysj1/20250306/112037992.shtml
+      \endverb
+    \endentry
+    \entry{ccer2025jul01}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e90cec55e885fe60cb4d214d02b22daf}{%
+           family={{National Voluntary Greenhouse Gas Emission Reduction Trading System}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{bibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorbibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authornamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \field{extraname}{2}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{7}
+      \field{title}{Daily market data, 1 {July} 2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2502lshq/20250701/170330466.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2502lshq/20250701/170330466.shtml
+      \endverb
+    \endentry
+    \entry{ccer2025jun24}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e90cec55e885fe60cb4d214d02b22daf}{%
+           family={{National Voluntary Greenhouse Gas Emission Reduction Trading System}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{bibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorbibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authornamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \field{extraname}{3}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{month}{6}
+      \field{title}{Daily market data, 24 {June} 2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2502lshq/20250624/170135985.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2502lshq/20250624/170135985.shtml
+      \endverb
+    \endentry
+    \entry{ccer2025dec30}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e90cec55e885fe60cb4d214d02b22daf}{%
+           family={{National Voluntary Greenhouse Gas Emission Reduction Trading System}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{bibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorbibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authornamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \field{extraname}{4}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{30}
+      \field{month}{12}
+      \field{title}{Daily market data, 30 {December} 2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2502lshq/20251230/151804011.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2502lshq/20251230/151804011.shtml
+      \endverb
+    \endentry
+    \entry{ccer2025annual}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e90cec55e885fe60cb4d214d02b22daf}{%
+           family={{National Voluntary Greenhouse Gas Emission Reduction Trading System}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{fullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{bibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorbibnamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authornamehash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhash}{e90cec55e885fe60cb4d214d02b22daf}
+      \strng{authorfullhashraw}{e90cec55e885fe60cb4d214d02b22daf}
+      \field{extraname}{5}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradate}{4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{month}{12}
+      \field{title}{Overview of the national voluntary greenhouse gas emission reduction market in 2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2307ptggc1/20260101/090113981.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2307ptggc1/20260101/090113981.shtml
+      \endverb
+    \endentry
+    \entry{she2025annual}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bcbcf229018e21579c70ff0e81cdec56}{%
+           family={{Shanghai Environment and Energy Exchange}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{fullhash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{fullhashraw}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{bibnamehash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{authorbibnamehash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{authornamehash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{authorfullhash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{authorfullhashraw}{bcbcf229018e21579c70ff0e81cdec56}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{month}{12}
+      \field{title}{Annual composite prices and trading information for the national carbon market, 2 {January}--31 {December} 2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://overview.cneeex.com/c/2025-12-31/497010.shtml
+      \endverb
+      \verb{url}
+      \verb https://overview.cneeex.com/c/2025-12-31/497010.shtml
+      \endverb
+    \endentry
+    \entry{she2025daily}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bcbcf229018e21579c70ff0e81cdec56}{%
+           family={{Shanghai Environment and Energy Exchange}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{fullhash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{fullhashraw}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{bibnamehash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{authorbibnamehash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{authornamehash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{authorfullhash}{bcbcf229018e21579c70ff0e81cdec56}
+      \strng{authorfullhashraw}{bcbcf229018e21579c70ff0e81cdec56}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Daily trading data}
+      \field{title}{National carbon market daily summaries, 2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://overview.cneeex.com/qgtpfqjy/mrgk/2025n/
+      \endverb
+      \verb{url}
+      \verb https://overview.cneeex.com/qgtpfqjy/mrgk/2025n/
+      \endverb
+    \endentry
+    \entry{sinopec2021bulk}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe6166aba87024c69dcc4fc254b1e67c}{%
+           family={{SINOPEC}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe6166aba87024c69dcc4fc254b1e67c}
+      \strng{fullhash}{fe6166aba87024c69dcc4fc254b1e67c}
+      \strng{fullhashraw}{fe6166aba87024c69dcc4fc254b1e67c}
+      \strng{bibnamehash}{fe6166aba87024c69dcc4fc254b1e67c}
+      \strng{authorbibnamehash}{fe6166aba87024c69dcc4fc254b1e67c}
+      \strng{authornamehash}{fe6166aba87024c69dcc4fc254b1e67c}
+      \strng{authorfullhash}{fe6166aba87024c69dcc4fc254b1e67c}
+      \strng{authorfullhashraw}{fe6166aba87024c69dcc4fc254b1e67c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{month}{7}
+      \field{note}{Corporate press release distributed by CNW/Cision}
+      \field{title}{{Sinopec} Closes First Bulk Agreement Transaction of {China}'s National Carbon Market}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.newswire.ca/news-releases/sinopec-closes-first-bulk-agreement-transaction-of-china-s-national-carbon-market-807064396.html
+      \endverb
+      \verb{url}
+      \verb https://www.newswire.ca/news-releases/sinopec-closes-first-bulk-agreement-transaction-of-china-s-national-carbon-market-807064396.html
+      \endverb
+    \endentry
+    \entry{state2024}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=183c14a96985f7bf98e5240b57a07aa4}{%
+           family={{State Council}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{183c14a96985f7bf98e5240b57a07aa4}
+      \strng{fullhash}{183c14a96985f7bf98e5240b57a07aa4}
+      \strng{fullhashraw}{183c14a96985f7bf98e5240b57a07aa4}
+      \strng{bibnamehash}{183c14a96985f7bf98e5240b57a07aa4}
+      \strng{authorbibnamehash}{183c14a96985f7bf98e5240b57a07aa4}
+      \strng{authornamehash}{183c14a96985f7bf98e5240b57a07aa4}
+      \strng{authorfullhash}{183c14a96985f7bf98e5240b57a07aa4}
+      \strng{authorfullhashraw}{183c14a96985f7bf98e5240b57a07aa4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{month}{2}
+      \field{number}{State Council Order No. 775}
+      \field{title}{Interim regulations on carbon emissions trading}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/zcwj/gwywj/202402/t20240205_1065850.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/zcwj/gwywj/202402/t20240205_1065850.shtml
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

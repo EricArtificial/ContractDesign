@@ -1,0 +1,657 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/apasortcite//global/global/global}
+    \entry{state2024}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=40f28bb52c3dfb708e154516961614f9}{%
+           family={{国务院}},
+           familyi={国\bibinitperiod}}}%
+      }
+      \strng{namehash}{40f28bb52c3dfb708e154516961614f9}
+      \strng{fullhash}{40f28bb52c3dfb708e154516961614f9}
+      \strng{fullhashraw}{40f28bb52c3dfb708e154516961614f9}
+      \strng{bibnamehash}{40f28bb52c3dfb708e154516961614f9}
+      \strng{authorbibnamehash}{40f28bb52c3dfb708e154516961614f9}
+      \strng{authornamehash}{40f28bb52c3dfb708e154516961614f9}
+      \strng{authorfullhash}{40f28bb52c3dfb708e154516961614f9}
+      \strng{authorfullhashraw}{40f28bb52c3dfb708e154516961614f9}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{month}{2}
+      \field{number}{国务院令第 775 号}
+      \field{title}{碳排放权交易管理暂行条例}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/zcwj/gwywj/202402/t20240205_1065850.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/zcwj/gwywj/202402/t20240205_1065850.shtml
+      \endverb
+    \endentry
+    \entry{ccer2025annual}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1c1d8c7d05a03fcd5762b84ff082cdf2}{%
+           family={{全国温室气体自愿减排交易系统}},
+           familyi={全\bibinitperiod}}}%
+      }
+      \strng{namehash}{1c1d8c7d05a03fcd5762b84ff082cdf2}
+      \strng{fullhash}{1c1d8c7d05a03fcd5762b84ff082cdf2}
+      \strng{fullhashraw}{1c1d8c7d05a03fcd5762b84ff082cdf2}
+      \strng{bibnamehash}{1c1d8c7d05a03fcd5762b84ff082cdf2}
+      \strng{authorbibnamehash}{1c1d8c7d05a03fcd5762b84ff082cdf2}
+      \strng{authornamehash}{1c1d8c7d05a03fcd5762b84ff082cdf2}
+      \strng{authorfullhash}{1c1d8c7d05a03fcd5762b84ff082cdf2}
+      \strng{authorfullhashraw}{1c1d8c7d05a03fcd5762b84ff082cdf2}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{month}{12}
+      \field{title}{2025 年全国温室气体自愿减排交易市场运行情况一览}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2307ptggc1/20260101/090113981.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2307ptggc1/20260101/090113981.shtml
+      \endverb
+    \endentry
+    \entry{she2025annual}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=701ba9c2b381e52ff3dd194602f82494}{%
+           family={{上海环境能源交易所}},
+           familyi={上\bibinitperiod}}}%
+      }
+      \strng{namehash}{701ba9c2b381e52ff3dd194602f82494}
+      \strng{fullhash}{701ba9c2b381e52ff3dd194602f82494}
+      \strng{fullhashraw}{701ba9c2b381e52ff3dd194602f82494}
+      \strng{bibnamehash}{701ba9c2b381e52ff3dd194602f82494}
+      \strng{authorbibnamehash}{701ba9c2b381e52ff3dd194602f82494}
+      \strng{authornamehash}{701ba9c2b381e52ff3dd194602f82494}
+      \strng{authorfullhash}{701ba9c2b381e52ff3dd194602f82494}
+      \strng{authorfullhashraw}{701ba9c2b381e52ff3dd194602f82494}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{month}{12}
+      \field{title}{全国碳市场每年综合价格行情及成交信息 20250102—20251231}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://overview.cneeex.com/c/2025-12-31/497010.shtml
+      \endverb
+      \verb{url}
+      \verb https://overview.cneeex.com/c/2025-12-31/497010.shtml
+      \endverb
+    \endentry
+    \entry{mee2021trade}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9301a4899a1c285ff54b592f16922008}{%
+           family={{生态环境部}},
+           familyi={生\bibinitperiod}}}%
+      }
+      \strng{namehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \strng{bibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorbibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authornamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{5}
+      \field{title}{碳排放权交易管理规则（试行）}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202105/W020210519636657102983.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202105/W020210519636657102983.pdf
+      \endverb
+    \endentry
+    \entry{mee2021reg}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9301a4899a1c285ff54b592f16922008}{%
+           family={{生态环境部}},
+           familyi={生\bibinitperiod}}}%
+      }
+      \strng{namehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \strng{bibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorbibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authornamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{5}
+      \field{title}{碳排放权登记管理规则（试行）}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202105/W020210519636656625912.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202105/W020210519636656625912.pdf
+      \endverb
+    \endentry
+    \entry{mee2024carryover}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9301a4899a1c285ff54b592f16922008}{%
+           family={{生态环境部}},
+           familyi={生\bibinitperiod}}}%
+      }
+      \strng{namehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \strng{bibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorbibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authornamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \field{extraname}{3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{10}
+      \field{note}{配额分配方案附件 5}
+      \field{title}{2019—2024 年度碳排放配额结转方案}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202410/W020241021392230468687.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202410/W020241021392230468687.pdf
+      \endverb
+    \endentry
+    \entry{mee2024allocation}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9301a4899a1c285ff54b592f16922008}{%
+           family={{生态环境部}},
+           familyi={生\bibinitperiod}}}%
+      }
+      \strng{namehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \strng{bibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorbibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authornamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \field{extraname}{4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{10}
+      \field{title}{关于做好 2023、2024 年度发电行业全国碳排放权交易配额分配及清缴相关工作的通知}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202410/t20241021_1089750.html
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202410/t20241021_1089750.html
+      \endverb
+    \endentry
+    \entry{mee2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9301a4899a1c285ff54b592f16922008}{%
+           family={{生态环境部}},
+           familyi={生\bibinitperiod}}}%
+      }
+      \strng{namehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \strng{bibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorbibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authornamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \field{extraname}{5}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{1}
+      \field{title}{2025 年全国碳市场平稳有序运行 圆满完成年度建设工作}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202601/t20260101_1139528.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202601/t20260101_1139528.shtml
+      \endverb
+    \endentry
+    \entry{ccer2023}{report}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9301a4899a1c285ff54b592f16922008}{%
+           family={{生态环境部}},
+           familyi={生\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=1c4111736e1557236b9f1373e982552f}{%
+           family={{国家市场监督管理总局}},
+           familyi={国\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {生态环境部}%
+      }
+      \strng{namehash}{32a740e2fa81dbe52a14082861483860}
+      \strng{fullhash}{32a740e2fa81dbe52a14082861483860}
+      \strng{fullhashraw}{32a740e2fa81dbe52a14082861483860}
+      \strng{bibnamehash}{32a740e2fa81dbe52a14082861483860}
+      \strng{authorbibnamehash}{32a740e2fa81dbe52a14082861483860}
+      \strng{authornamehash}{32a740e2fa81dbe52a14082861483860}
+      \strng{authorfullhash}{32a740e2fa81dbe52a14082861483860}
+      \strng{authorfullhashraw}{32a740e2fa81dbe52a14082861483860}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{10}
+      \field{number}{部令第 31 号}
+      \field{title}{温室气体自愿减排交易管理办法（试行）}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk02/202310/t20231020_1043694.html
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk02/202310/t20231020_1043694.html
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{state2024}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=40f28bb52c3dfb708e154516961614f9}{%
+           family={{国务院}},
+           familyi={国\bibinitperiod}}}%
+      }
+      \strng{namehash}{40f28bb52c3dfb708e154516961614f9}
+      \strng{fullhash}{40f28bb52c3dfb708e154516961614f9}
+      \strng{fullhashraw}{40f28bb52c3dfb708e154516961614f9}
+      \strng{bibnamehash}{40f28bb52c3dfb708e154516961614f9}
+      \strng{authorbibnamehash}{40f28bb52c3dfb708e154516961614f9}
+      \strng{authornamehash}{40f28bb52c3dfb708e154516961614f9}
+      \strng{authorfullhash}{40f28bb52c3dfb708e154516961614f9}
+      \strng{authorfullhashraw}{40f28bb52c3dfb708e154516961614f9}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{month}{2}
+      \field{number}{国务院令第 775 号}
+      \field{title}{碳排放权交易管理暂行条例}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/zcwj/gwywj/202402/t20240205_1065850.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/zcwj/gwywj/202402/t20240205_1065850.shtml
+      \endverb
+    \endentry
+    \entry{ccer2025annual}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1c1d8c7d05a03fcd5762b84ff082cdf2}{%
+           family={{全国温室气体自愿减排交易系统}},
+           familyi={全\bibinitperiod}}}%
+      }
+      \strng{namehash}{1c1d8c7d05a03fcd5762b84ff082cdf2}
+      \strng{fullhash}{1c1d8c7d05a03fcd5762b84ff082cdf2}
+      \strng{fullhashraw}{1c1d8c7d05a03fcd5762b84ff082cdf2}
+      \strng{bibnamehash}{1c1d8c7d05a03fcd5762b84ff082cdf2}
+      \strng{authorbibnamehash}{1c1d8c7d05a03fcd5762b84ff082cdf2}
+      \strng{authornamehash}{1c1d8c7d05a03fcd5762b84ff082cdf2}
+      \strng{authorfullhash}{1c1d8c7d05a03fcd5762b84ff082cdf2}
+      \strng{authorfullhashraw}{1c1d8c7d05a03fcd5762b84ff082cdf2}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{month}{12}
+      \field{title}{2025 年全国温室气体自愿减排交易市场运行情况一览}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2307ptggc1/20260101/090113981.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.ccer.com.cn/wcm/ccer/html/2307ptggc1/20260101/090113981.shtml
+      \endverb
+    \endentry
+    \entry{she2025annual}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=701ba9c2b381e52ff3dd194602f82494}{%
+           family={{上海环境能源交易所}},
+           familyi={上\bibinitperiod}}}%
+      }
+      \strng{namehash}{701ba9c2b381e52ff3dd194602f82494}
+      \strng{fullhash}{701ba9c2b381e52ff3dd194602f82494}
+      \strng{fullhashraw}{701ba9c2b381e52ff3dd194602f82494}
+      \strng{bibnamehash}{701ba9c2b381e52ff3dd194602f82494}
+      \strng{authorbibnamehash}{701ba9c2b381e52ff3dd194602f82494}
+      \strng{authornamehash}{701ba9c2b381e52ff3dd194602f82494}
+      \strng{authorfullhash}{701ba9c2b381e52ff3dd194602f82494}
+      \strng{authorfullhashraw}{701ba9c2b381e52ff3dd194602f82494}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{month}{12}
+      \field{title}{全国碳市场每年综合价格行情及成交信息 20250102—20251231}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://overview.cneeex.com/c/2025-12-31/497010.shtml
+      \endverb
+      \verb{url}
+      \verb https://overview.cneeex.com/c/2025-12-31/497010.shtml
+      \endverb
+    \endentry
+    \entry{mee2021trade}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9301a4899a1c285ff54b592f16922008}{%
+           family={{生态环境部}},
+           familyi={生\bibinitperiod}}}%
+      }
+      \strng{namehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \strng{bibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorbibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authornamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{5}
+      \field{title}{碳排放权交易管理规则（试行）}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202105/W020210519636657102983.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202105/W020210519636657102983.pdf
+      \endverb
+    \endentry
+    \entry{mee2021reg}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9301a4899a1c285ff54b592f16922008}{%
+           family={{生态环境部}},
+           familyi={生\bibinitperiod}}}%
+      }
+      \strng{namehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \strng{bibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorbibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authornamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{5}
+      \field{title}{碳排放权登记管理规则（试行）}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202105/W020210519636656625912.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202105/W020210519636656625912.pdf
+      \endverb
+    \endentry
+    \entry{mee2024carryover}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9301a4899a1c285ff54b592f16922008}{%
+           family={{生态环境部}},
+           familyi={生\bibinitperiod}}}%
+      }
+      \strng{namehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \strng{bibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorbibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authornamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \field{extraname}{3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{10}
+      \field{note}{配额分配方案附件 5}
+      \field{title}{2019—2024 年度碳排放配额结转方案}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202410/W020241021392230468687.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202410/W020241021392230468687.pdf
+      \endverb
+    \endentry
+    \entry{mee2024allocation}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9301a4899a1c285ff54b592f16922008}{%
+           family={{生态环境部}},
+           familyi={生\bibinitperiod}}}%
+      }
+      \strng{namehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \strng{bibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorbibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authornamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \field{extraname}{4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{10}
+      \field{title}{关于做好 2023、2024 年度发电行业全国碳排放权交易配额分配及清缴相关工作的通知}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202410/t20241021_1089750.html
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202410/t20241021_1089750.html
+      \endverb
+    \endentry
+    \entry{mee2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9301a4899a1c285ff54b592f16922008}{%
+           family={{生态环境部}},
+           familyi={生\bibinitperiod}}}%
+      }
+      \strng{namehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{fullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \strng{bibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorbibnamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authornamehash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhash}{9301a4899a1c285ff54b592f16922008}
+      \strng{authorfullhashraw}{9301a4899a1c285ff54b592f16922008}
+      \field{extraname}{5}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{1}
+      \field{title}{2025 年全国碳市场平稳有序运行 圆满完成年度建设工作}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202601/t20260101_1139528.shtml
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202601/t20260101_1139528.shtml
+      \endverb
+    \endentry
+    \entry{ccer2023}{report}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9301a4899a1c285ff54b592f16922008}{%
+           family={{生态环境部}},
+           familyi={生\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=1c4111736e1557236b9f1373e982552f}{%
+           family={{国家市场监督管理总局}},
+           familyi={国\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {生态环境部}%
+      }
+      \strng{namehash}{32a740e2fa81dbe52a14082861483860}
+      \strng{fullhash}{32a740e2fa81dbe52a14082861483860}
+      \strng{fullhashraw}{32a740e2fa81dbe52a14082861483860}
+      \strng{bibnamehash}{32a740e2fa81dbe52a14082861483860}
+      \strng{authorbibnamehash}{32a740e2fa81dbe52a14082861483860}
+      \strng{authornamehash}{32a740e2fa81dbe52a14082861483860}
+      \strng{authorfullhash}{32a740e2fa81dbe52a14082861483860}
+      \strng{authorfullhashraw}{32a740e2fa81dbe52a14082861483860}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{10}
+      \field{number}{部令第 31 号}
+      \field{title}{温室气体自愿减排交易管理办法（试行）}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk02/202310/t20231020_1043694.html
+      \endverb
+      \verb{url}
+      \verb https://www.mee.gov.cn/xxgk2018/xxgk/xxgk02/202310/t20231020_1043694.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

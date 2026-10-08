@@ -12,6 +12,7 @@
 4. 整理三次真实讨论纪要与成员分工，导出并检查提交用 PDF。
 
 ## Completed
+- [x] 2026-10-08：按用户五点反馈重新检索证据并完整重写第三部分为III.A—D：以履约配额采购为决定性标准选择实物；将A1—A3改为新增接口/协议和交收规则；增加144万吨预计盈余披露案例（仅潜在供给，非核验库存）、临近到期逐户100%锁定备额约束、五步货银对付流程、共同营业日及故障补正、每日和到期结算价公式、采购成本恒等式及最便宜交付/收敛边界。同步合约表交割方式和品级两行，新增三条书目；底稿为 `research/contract-design/SECTION3_COMPLETE_REWRITE_EVIDENCE_20261008.md`。全国合格实时可用余额仍未取得，未将披露或成交流量写成库存充足证明。make intermediate成功，中文PDF12页，最终主稿日志无警告/溢出，引用、PDF文本和流程页渲染检查通过。未修改submission/，未新增任务报告。
 - [x] 2026-10-08：精简重写III.A，按目标、方式比较、CEA证据、选择及条件组织。完成两轮复核修改：第一轮核对事实边界及现金采购风险，第二轮删重复、核对合约表；保留A1—A3、1000吨和两项制度引注。小节TeX字符2065→859；make intermediate成功，中文PDF9页，最终日志无警告/未定义引用/溢出，PDF文本核验通过。复核记录追加至 `research/contract-design/SECTION3_REGISTRY_EVIDENCE_AND_CHOICE_20261008.md`。未改submission/或其他条款。
 - [x] 2026-10-08：按后续要求检索交割方式选择和参数推导的论证范本，新增 `research/contract-design/DELIVERY_CHOICE_AND_PARAMETER_ARGUMENT_TEMPLATES_20261008.md`。核读CME育肥牛选择现金的解释、NYMEX21-009申报Exhibit D的供给/合约/限仓计算、南华托管的广期所碳酸锂设计说明、17CFR Part38 Appendix C。区分方式优劣比较与已选方案可行性论证，标明转载、历史及全文未读边界；ICE供给附件公开版删节，不作为复算范本。形成CEA参数论证卡片，未改主稿或submission/、未确定新参数。
 - [x] 2026-10-08：完成期货交割机制参考范本检索，新增 `research/contract-design/DELIVERY_MECHANISM_REFERENCE_TEMPLATES_20261008.md`。已打开核读 ICE EUA 规格、EEX/ECC 产品与交收入口、CME Chapter1269；中金所可访问官方 PDF 为2020历史版，2024修订入口访问失败，明确版本限制。形成账户核验、交割配对、货银对付、回执、延期与失败处理的设计参考；未确定新参数，未改设计主稿或 submission/。
@@ -153,13 +154,13 @@
 
 **Latest reference search (2026-10-08):** 已完成交割机制范本检索，详见 `research/contract-design/DELIVERY_MECHANISM_REFERENCE_TEMPLATES_20261008.md`。ICE为配额主范本，EEX/ECC补账户结构，CME补操作细则；中金所2020官方历史版只作结构类比。下一步如用户要求，可据此设计CEA具体交收流程；当前未确定时间节点或价格公式，未修改主稿。
 
-**Latest task result (2026-10-08):** 已重新检索全国CEA登记结算技术条件并重写III.A：以电子确权、现货货银对付及实际清算能力为事实基础，仅对期货接入、资金系统衔接与库存持仓列A1—A3；按直接履约资产交付目标选实物，同时完整说明现金优势及结论成立条件。底稿 `research/contract-design/SECTION3_REGISTRY_EVIDENCE_AND_CHOICE_20261008.md`。中文PDF10页，编译、引注、PDF文本及空白检查通过，未修改 submission/ 或推进下一步。下列旧记录保留为历史。
+**Latest task result (2026-10-08):** 第三部分已按最新反馈完整重写为方式选择、供给与持仓匹配、到期交收流程、结算价格与期现收敛四小节，旧A1—A3不再作为现行方案。具体证据边界、公式及规则理由见 `research/contract-design/SECTION3_COMPLETE_REWRITE_EVIDENCE_20261008.md`。下列关于保留假设、尚未设计流程与价格的记录为历史。
 
 **Latest citation update (2026-10-05):** 两条缺失引用已补全并经 `make` 验证；英文 PDF 为 4 页，最终 LaTeX/Biber 日志无警告、未定义引用或版面溢出。`mee2025registry` 通过别名复用 `mee2025reply`，正文保持原样。后续按用户下一项具体指令继续。
 
 **Latest layout update (2026-10-05):** 已按最新用户指令恢复英文主标题与正文原间距（center 环境及标题后 0.5 倍基线间距）。section 已恢复原间距（前 0.85、后 0.4 倍基线间距），subsection 为粗斜体；此前缩小的 subsection 与图表间距保留。PDF 已重新编译，仍为 4 页，最终日志无警告或版面溢出。后续按用户下一项具体指令继续。
 
-**Next unfinished task:** 当前中文已成文部分的英文转译、中文 APA 书目、表格和图表注校对已完成。中文和英文仍需设计其余条款、交割与结算价格及风险规则；按用户下一项具体指令继续。
+**Next unfinished task:** 等用户下一项具体指令。第三部分已补流程与价格；合约月份、最后交易日的月内定位、一般月份限仓和大户报告等其余条款仍待设计。全国合格实时自由余额与期货接口授权/联调尚无实证确认；拟议逐户备额规则不替代上市前的供给集中度评估。submission/保持原样。
 
 **Latest task result:** 英文稿引用的 references_en.bib 实际不存在，已改接共享中文书目并补中文字体。21 个引用键与 21 条生成书目一致；逐句对应记录含 35 个中文原句、53 个英文句子、十项条款和八组待定说明。英文 PDF 为 A4、4 页，最终日志无警告、未定义引用、字体缺失或 Overfull/Underfull。PDF 可见文本保守计数为 1,677 个英文/数字词项（排除合约表与参考文献），texcount 正文为 1,092 词。make 与 make intermediate 均通过；详细记录见 research/contract-design/translation/。
 

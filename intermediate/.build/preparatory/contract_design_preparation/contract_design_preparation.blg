@@ -1,0 +1,19 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[1] Config.pm:331> INFO - Logfile is 'intermediate/.build/preparatory/contract_design_preparation/contract_design_preparation.blg'
+[199] biber-darwin:342> INFO - === Thu Oct  8, 2026, 16:38:06
+[239] Biber.pm:421> INFO - Reading 'intermediate/.build/preparatory/contract_design_preparation/contract_design_preparation.bcf'
+[566] Biber.pm:1002> INFO - Found 31 citekeys in bib section 0
+[614] Biber.pm:4487> INFO - Processing section 0
+[635] Biber.pm:4678> INFO - Looking for bibtex file 'research/contract-design/references.bib' for section 0
+[638] bibtex.pm:1713> INFO - LaTeX decoding ...
+[704] bibtex.pm:1519> INFO - Found BibTeX data source 'research/contract-design/references.bib'
+[1351] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1351] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1352] Biber.pm:4307> INFO - Sorting list 'nyt/apasortcite//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1352] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[1556] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1556] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1556] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1556] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[1612] bbl.pm:676> INFO - Writing 'intermediate/.build/preparatory/contract_design_preparation/contract_design_preparation.bbl' with encoding 'UTF-8'
+[1661] bbl.pm:779> INFO - Output to intermediate/.build/preparatory/contract_design_preparation/contract_design_preparation.bbl
